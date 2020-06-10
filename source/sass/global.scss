@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'Bebas Neue';
+  src: local('Bebas Neue Regular'), local('BebasNeueRegular'), url('bebasneueregular.woff2') format('woff2'), url('bebasneueregular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: local('Roboto Condensed Light'), local('RobotoCondensed-Light'), url('Robotocondensedlight.woff2') format('woff2'), url('Robotocondensedlight.woff') format('woff'), url('Robotocondensedlight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: local('Roboto Condensed'), local('RobotoCondensed-Regular'), url('Robotocondensed.woff2') format('woff2'), url('Robotocondensed.woff') format('woff'), url('Robotocondensed.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: local('Roboto Condensed Bold'), local('RobotoCondensed-Bold'), url('Robotocondensedbold.woff2') format('woff2'), url('Robotocondensedbold.woff') format('woff'), url('Robotocondensedbold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $base-color;
+  font-weight: 400;
+}
+
+main {
+  flex-grow: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
