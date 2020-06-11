@@ -308,35 +308,35 @@ template {
   display: none; }
 
 @font-face {
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue";
   src: local("Bebas Neue Regular"), local("BebasNeueRegular"), url("../fonts/bebasneueregular.woff2") format("woff2"), url("../fonts/bebasneueregular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue";
   src: local("Bebas Neue Bold"), local("BebasNeueBold"), url("../fonts/bebasneuebold.woff2") format("woff2"), url("../fonts/bebasneuebold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed";
   src: local("Roboto Condensed Light"), local("RobotoCondensed-Light"), url("../fonts/Robotocondensedlight.woff2") format("woff2"), url("../fonts/Robotocondensedlight.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed";
   src: local("Roboto Condensed"), local("RobotoCondensed-Regular"), url("../fonts/Robotocondensed.woff2") format("woff2"), url("../fonts/Robotocondensed.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed";
   src: local("Roboto Condensed Bold"), local("RobotoCondensed-Bold"), url("../fonts/Robotocondensedbold.woff2") format("woff2"), url("../fonts/Robotocondensedbold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
@@ -417,12 +417,14 @@ a {
   .heading {
     font-size: 32px; } }
 
+.footer {
+  background-color: #030a1a; }
+
 .header {
   padding: 29px 0 47px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../img/hero-bg.jpg");
-  background-image: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg); }
+  background-image: url("../img/hero-bg.jpg"); }
 
 .header__inner {
   display: -webkit-box;
@@ -479,7 +481,6 @@ a {
   font-size: 110px;
   font-weight: 700;
   line-height: 1;
-  text-align: right;
   letter-spacing: 0.03em;
   color: #ffffff;
   text-align: right;
@@ -562,14 +563,12 @@ a {
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .header {
-    background-image: url("../img/hero-bg@2x.jpg");
-    background-image: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg); } }
+    background-image: url("../img/hero-bg@2x.jpg"); } }
 
 @media screen and (max-width: 1023px) {
   .header {
     padding: 39px 0 82px;
-    background-image: url("../img/hero-bg-tablet.jpg");
-    background-image: conic-gradient(from 139.4deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg); }
+    background-image: url("../img/hero-bg-tablet.jpg"); }
   .header__top {
     margin-bottom: 19px; }
   .header__logo,
@@ -595,23 +594,22 @@ a {
     max-width: 324px;
     height: 390px;
     overflow: hidden; }
-    .header__image img {
-      position: relative;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-          -ms-transform: translateX(-50%);
-              transform: translateX(-50%);
-      max-width: none;
-      width: auto;
-      height: 100%; }
+  .header__image img {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    max-width: none;
+    width: auto;
+    height: 100%; }
   .header__list {
     left: -89px;
     top: 47.7%; } }
 
 @media screen and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), screen and (max-width: 1023px) and (min-resolution: 144dpi), screen and (max-width: 1023px) and (min-resolution: 1.5dppx) {
   .header {
-    background-image: url("../img/hero-bg-tablet@2x.jpg");
-    background-image: conic-gradient(from 139.4deg at 20.7% 35.74%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg); } }
+    background-image: url("../img/hero-bg-tablet@2x.jpg"); } }
 
 @media screen and (max-width: 767px) {
   .header {
