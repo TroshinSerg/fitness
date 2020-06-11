@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Круизы в антарктику</title>
-  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font">
-  <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font">
-  <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font">
-  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font">
+  <title>Фитнес центр Омск</title>
+  <link rel="preload" href="fonts/Robotocondensedlight.woff2" as="font">
+  <link rel="preload" href="fonts/Robotocondensed.woff2" as="font">
+  <link rel="preload" href="fonts/Robotocondensedbold.woff2" as="font">
+  <link rel="preload" href="fonts/bebasneueregular.woff2" as="font">
+  <link rel="preload" href="fonts/bebasneuebold.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page">
@@ -16,7 +17,41 @@
     <include src="build/img/sprite.svg"></include>
   </div>
   <header class="header">
-
+    <div class="header__inner container">
+      <div class="header__top">
+        <div class="header__logo">Supergym</div>
+        <a class="header__phone" href="tel:88005555555">8-800-555-55-55</a>
+      </div>
+      <div class="header__content">
+        <h1 class="header__heading">
+          <span class="header__city">Омск</span>
+          Фитнес центр
+        </h1>
+        <ul class="header__list">
+          <li class="header__list-item">Тренажёрный зал</li>
+          <li class="header__list-item">Групповые занятия</li>
+          <li class="header__list-item">Кардио-зона</li>
+        </ul>
+        <a class="header__btn" href="#">Купить абонемент</a>
+      </div>
+      <div class="header__image">
+        <picture>
+          <source type="image/webp" srcset="img/hero-image.webp 1x, img/hero-image@2x.webp 2x">
+          <img src="img/hero-image.jpg" srcset="img/hero-image@2x.jpg 2x" alt="Тренер фитнес центра">
+        </picture>
+      </div>
+      <ul class="header__social">
+        <li class="header__social-item">
+          <a class="header__social-link" href="#">Fb</a>
+        </li>
+        <li class="header__social-item">
+          <a class="header__social-link" href="#">vk</a>
+        </li>
+        <li class="header__social-item">
+          <a class="header__social-link" href="#">ig</a>
+        </li>
+      </ul>
+    </div>
   </header>
   <main>
 
@@ -24,6 +59,6 @@
   <footer class="footer">
 
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 </html>

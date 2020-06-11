@@ -1,14 +1,22 @@
 @font-face {
   font-family: 'Bebas Neue';
-  src: local('Bebas Neue Regular'), local('BebasNeueRegular'), url('bebasneueregular.woff2') format('woff2'), url('bebasneueregular.woff') format('woff');
+  src: local('Bebas Neue Regular'), local('BebasNeueRegular'), url('../fonts/bebasneueregular.woff2') format('woff2'), url('../fonts/bebasneueregular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
+  font-family: 'Bebas Neue';
+  src: local('Bebas Neue Bold'), local('BebasNeueBold'), url('../fonts/bebasneuebold.woff2') format('woff2'), url('../fonts/bebasneuebold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'Roboto Condensed';
-  src: local('Roboto Condensed Light'), local('RobotoCondensed-Light'), url('Robotocondensedlight.woff2') format('woff2'), url('Robotocondensedlight.woff') format('woff'), url('Robotocondensedlight.ttf') format('truetype');
+  src: local('Roboto Condensed Light'), local('RobotoCondensed-Light'), url('../fonts/Robotocondensedlight.woff2') format('woff2'), url('../fonts/Robotocondensedlight.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -16,7 +24,7 @@
 
 @font-face {
   font-family: 'Roboto Condensed';
-  src: local('Roboto Condensed'), local('RobotoCondensed-Regular'), url('Robotocondensed.woff2') format('woff2'), url('Robotocondensed.woff') format('woff'), url('Robotocondensed.ttf') format('truetype');
+  src: local('Roboto Condensed'), local('RobotoCondensed-Regular'), url('../fonts/Robotocondensed.woff2') format('woff2'), url('../fonts/Robotocondensed.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -24,7 +32,7 @@
 
 @font-face {
   font-family: 'Roboto Condensed';
-  src: local('Roboto Condensed Bold'), local('RobotoCondensed-Bold'), url('Robotocondensedbold.woff2') format('woff2'), url('Robotocondensedbold.woff') format('woff'), url('Robotocondensedbold.ttf') format('truetype');
+  src: local('Roboto Condensed Bold'), local('RobotoCondensed-Bold'), url('../fonts/Robotocondensedbold.woff2') format('woff2'), url('../fonts/Robotocondensedbold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -47,11 +55,13 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: $base-color;
-  font-weight: 400;
+  font-weight: 300;
+
+  overflow: hidden;
 }
 
 main {
