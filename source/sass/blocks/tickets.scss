@@ -72,7 +72,6 @@
     width: 0;
     height: 2px;
     background-color: $darkred-color;
-    transition: width 0.3s ease;
   }
 
   &--active {
@@ -81,6 +80,7 @@
 
     &::before {
       width: 100%;
+      transition: width 0.3s ease;
     }
   }
 }

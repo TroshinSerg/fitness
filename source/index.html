@@ -32,7 +32,7 @@
           <li class="header__list-item">Групповые занятия</li>
           <li class="header__list-item">Кардио-зона</li>
         </ul>
-        <a class="header__btn" href="#">Купить абонемент</a>
+        <a class="header__btn" href="#tickets">Купить абонемент</a>
       </div>
       <div class="header__image">
         <picture>
@@ -82,17 +82,17 @@
         </div>
       </div>
     </section>
-    <section class="tickets">
+    <section class="tickets" id="tickets">
       <div class="tickets__inner container">
         <h2 class="tickets__heading heading">Абонементы</h2>
         <div class="tickets__tabs">
           <div class="tickets__tabs-nav">
-            <button class="tickets__tabs-nav-btn tickets__tabs-nav-btn--active" type="button" disabled>1 месяц</button>
-            <button class="tickets__tabs-nav-btn" type="button">6 месяцев</button>
-            <button class="tickets__tabs-nav-btn" type="button">12 месяцев</button>
+            <button class="tickets__tabs-nav-btn tickets__tabs-nav-btn--active" type="button" data-target="#month" disabled>1 месяц</button>
+            <button class="tickets__tabs-nav-btn" type="button" data-target="#halfYear">6 месяцев</button>
+            <button class="tickets__tabs-nav-btn" type="button" data-target="#year">12 месяцев</button>
           </div>
 
-          <div class="tickets__tabs-content tickets__tabs-content--active">
+          <div class="tickets__tabs-content tickets__tabs-content--active" id="month">
             <ul class="tickets__list">
               <li class="tickets__card card">
                 <div class="card__inner">
@@ -135,7 +135,7 @@
               </li>
             </ul>
           </div>
-          <div class="tickets__tabs-content">
+          <div class="tickets__tabs-content" id="halfYear">
             <ul class="tickets__list">
               <li class="tickets__card card">
                 <div class="card__inner">
@@ -178,7 +178,7 @@
               </li>
             </ul>
           </div>
-          <div class="tickets__tabs-content">
+          <div class="tickets__tabs-content" id="year">
             <ul class="tickets__list">
               <li class="tickets__card card">
                 <div class="card__inner">
@@ -228,6 +228,7 @@
   <footer class="footer">
 
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/script.min.js"></script>
 </body>
 </html>
