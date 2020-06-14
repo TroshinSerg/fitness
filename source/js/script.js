@@ -15,7 +15,8 @@ function onHeaderBtnClick(evt) {
 }
 
 function onTabsBtnClick(evt) {
-  var target = $(evt.currentTarget).attr('data-target');
+  evt.preventDefault();
+  var target = $(evt.currentTarget).attr('href');
 
   $(evt.currentTarget).siblings().removeClass('tickets__tabs-nav-btn--active').attr('disabled', false);
   $(evt.currentTarget).addClass('tickets__tabs-nav-btn--active').attr('disabled', true);
