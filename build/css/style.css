@@ -846,8 +846,9 @@ a {
     margin-left: -15px;
     margin-right: -15px; }
   .gym__image {
+    max-width: 472px;
     max-height: 313px;
-    margin-bottom: 40px; }
+    margin: 0 auto 40px; }
   .gym__image img {
     width: 147.5%;
     height: 100%;

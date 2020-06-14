@@ -248,8 +248,9 @@
   }
 
   .gym__image {
+    max-width: 472px;
     max-height: 313px;
-    margin-bottom: 40px;
+    margin: 0 auto 40px;
   }
 
   .gym__image img {
