@@ -725,8 +725,10 @@ a {
   width: 72px;
   height: 72px;
   border-radius: 50%;
+  border: none;
   background-image: -o-linear-gradient(45.11deg, #003d85 25.38%, #b80027 74.89%);
-  background-image: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%); }
+  background-image: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
+  cursor: pointer; }
   .gym__video-btn::before {
     content: "";
     position: absolute;

@@ -84,7 +84,9 @@
   width: 72px;
   height: 72px;
   border-radius: 50%;
+  border: none;
   background-image: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
+  cursor: pointer;
 
   &::before {
     content: "";
