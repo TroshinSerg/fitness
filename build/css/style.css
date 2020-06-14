@@ -393,7 +393,7 @@ a {
   margin: 0 auto;
   padding: 0 20px; }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1199px) {
   .container {
     padding: 0 45px; } }
 
@@ -409,7 +409,7 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase; }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1199px) {
   .heading {
     font-size: 42px; } }
 
@@ -565,7 +565,7 @@ a {
   .header {
     background-image: url("../img/hero-bg@2x.jpg"); } }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1199px) {
   .header {
     padding: 39px 0 82px;
     background-image: url("../img/hero-bg-tablet.jpg"); }
@@ -607,7 +607,7 @@ a {
     left: -89px;
     top: 47.7%; } }
 
-@media screen and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), screen and (max-width: 1023px) and (min-resolution: 144dpi), screen and (max-width: 1023px) and (min-resolution: 1.5dppx) {
+@media screen and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 1199px) and (-o-min-device-pixel-ratio: 3/2), screen and (max-width: 1199px) and (min-resolution: 144dpi), screen and (max-width: 1199px) and (min-resolution: 1.5dppx) {
   .header {
     background-image: url("../img/hero-bg-tablet@2x.jpg"); } }
 
@@ -777,7 +777,7 @@ a {
   .gym__video-btn::after {
     background-image: url("../img/video-btn-circle@2x.png"); } }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1199px) {
   .gym {
     padding: 100px 0; }
   .gym__inner {
@@ -1083,7 +1083,7 @@ a {
   .tickets__inner {
     background-image: url("../img/damn@2x.png"); } }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1199px) {
   .tickets {
     padding: 100px 0; }
   .tickets__inner::before {
