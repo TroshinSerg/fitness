@@ -421,7 +421,7 @@ a {
   background-color: #030a1a; }
 
 .header {
-  padding: 29px 0 47px;
+  padding: 30px 0 47px;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("../img/hero-bg.jpg"); }
@@ -443,12 +443,11 @@ a {
   width: 100%; }
 
 .header__logo {
-  font-family: "Bebas Neue", "Arial", sans-serif;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: 0.02em;
-  color: #ffffff; }
+  display: block; }
+
+.header__logo img {
+  display: block;
+  height: auto; }
 
 .header__phone {
   font-family: "Bebas Neue", "Arial", sans-serif;
@@ -481,14 +480,14 @@ a {
   font-size: 110px;
   font-weight: 700;
   line-height: 1;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.029em;
   color: #ffffff;
   text-align: right;
   text-transform: uppercase; }
 
 .header__city {
   display: block;
-  margin-bottom: 13px;
+  margin-bottom: 12px;
   font-size: 49px;
   font-weight: 400;
   letter-spacing: 0.03em; }
@@ -496,7 +495,7 @@ a {
 .header__list {
   position: absolute;
   left: -79px;
-  top: 54.5%;
+  top: 54.2%;
   list-style: none;
   margin: 0;
   padding: 0; }
@@ -531,13 +530,14 @@ a {
 
 .header__social {
   list-style: none;
-  margin: 0 0 47px auto;
+  margin: 0 0 42px auto;
   padding: 0;
   -ms-flex-item-align: end;
       align-self: flex-end; }
 
 .header__social-item {
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  text-align: right; }
   .header__social-item:last-child {
     margin-bottom: 0; }
 
@@ -559,7 +559,10 @@ a {
 .header__image img {
   display: block;
   max-width: 100%;
-  height: auto; }
+  height: auto;
+  -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+          transform: translateY(-5px); }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .header {
@@ -567,11 +570,12 @@ a {
 
 @media screen and (max-width: 1199px) {
   .header {
-    padding: 39px 0 82px;
+    padding: 39px 0 81px;
     background-image: url("../img/hero-bg-tablet.jpg"); }
   .header__top {
     margin-bottom: 19px; }
-  .header__logo,
+  .header__logo img {
+    width: 82px; }
   .header__phone {
     font-size: 24px;
     letter-spacing: 0.02em; }
@@ -587,7 +591,9 @@ a {
     margin-bottom: 5px;
     font-size: 34px; }
   .header__btn {
-    max-width: 183px; }
+    max-width: 187px;
+    margin-right: -2px;
+    padding: 20px 8px 19px; }
   .header__social {
     display: none; }
   .header__image {
@@ -602,7 +608,7 @@ a {
             transform: translateX(-50%);
     max-width: none;
     width: auto;
-    height: 100%; }
+    height: 102%; }
   .header__list {
     left: -89px;
     top: 47.7%; } }
@@ -616,7 +622,8 @@ a {
     padding: 20px 0 80px; }
   .header__top {
     margin-bottom: 73px; }
-  .header__logo,
+  .header__logo img {
+    width: 68px; }
   .header__phone {
     font-size: 20px; }
   .header__content {
@@ -656,7 +663,7 @@ a {
       flex-shrink: 0; }
 
 .gym__heading {
-  margin: 0 0 9px; }
+  margin: 0 0 8px; }
 
 .gym__subheading {
   margin-bottom: 39px;
@@ -667,7 +674,7 @@ a {
   margin: 0; }
 
 .gym__text p + p {
-  margin-top: 9px; }
+  margin-top: 7px; }
 
 .gym__aside {
   width: 56.9%; }
@@ -771,7 +778,8 @@ a {
 
 .gym__video-icon {
   -ms-flex-item-align: center;
-      align-self: center; }
+      align-self: center;
+  margin-left: 5px; }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .gym__video {
@@ -790,6 +798,8 @@ a {
     margin: 0 auto 45px;
     padding-top: 0;
     text-align: center; }
+  .gym__heading {
+    margin-bottom: 10px; }
   .gym__subheading {
     margin-bottom: 33px; }
   .gym__text p + p {
@@ -832,7 +842,7 @@ a {
 
 @media screen and (max-width: 767px) {
   .gym {
-    padding: 67px 0; }
+    padding: 68px 0 70px; }
   .gym__content {
     margin: 0 0 34px;
     text-align: left; }
@@ -926,7 +936,7 @@ a {
   display: block;
   width: 206px;
   margin: 0 auto;
-  padding: 24px 8px;
+  padding: 25px 8px 24px;
   font-size: 12px;
   line-height: 1.16;
   color: #102654;
@@ -961,7 +971,7 @@ a {
 
 @media screen and (max-width: 767px) {
   .card__inner {
-    padding: 42px 20px 48px; }
+    padding: 42px 20px 47px; }
   .card__heading {
     margin-bottom: 8px;
     font-size: 22px; }
@@ -1000,7 +1010,7 @@ a {
     background-image: url("../img/damn.png"); }
 
 .tickets__heading {
-  margin: 0 0 39px;
+  margin: 0 0 35px;
   text-align: center; }
 
 .tickets__tabs-nav {
@@ -1018,8 +1028,8 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   min-width: 341px;
-  margin: 0 auto 39px;
-  padding-bottom: 14px;
+  margin: 0 auto 37px;
+  padding-bottom: 11px;
   border-bottom: solid 2px rgba(120, 120, 120, 0.2); }
 
 .tickets__tabs-nav-btn {
@@ -1044,7 +1054,7 @@ a {
     content: "";
     position: absolute;
     left: 50%;
-    bottom: -16px;
+    bottom: -13px;
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
@@ -1090,32 +1100,32 @@ a {
   .tickets {
     padding: 100px 0; }
   .tickets__inner::before {
-    bottom: -227px;
+    bottom: -225px;
     right: -38px;
     width: 346px;
     height: 444px; }
   .tickets__heading {
-    margin-bottom: 31px; }
+    margin-bottom: 30px; }
   .tickets__tabs-nav {
     min-width: 332px;
     margin-bottom: 44px;
-    padding-bottom: 15px; }
+    padding-bottom: 12px; }
   .tickets__tabs-nav-btn {
     font-size: 18px; }
     .tickets__tabs-nav-btn--active::before {
-      bottom: -17px; }
+      bottom: -14px; }
   .tickets__list {
     display: block; }
   .tickets__card {
     width: 100%;
     max-width: 442px;
-    margin: 0 auto 40px; }
+    margin: 0 auto 39px; }
     .tickets__card:last-child {
       margin-bottom: 0; } }
 
 @media screen and (max-width: 767px) {
   .tickets {
-    padding: 70px 0; }
+    padding: 68px 0 70px; }
   .tickets__inner::before {
     display: none; }
   .tickets__heading {
@@ -1132,6 +1142,6 @@ a {
               transform: translateX(0);
       width: calc(100% + 7px); }
   .tickets__card {
-    margin-bottom: 35px; }
+    margin-bottom: 34px; }
     .tickets__card:last-child {
       margin-bottom: 0; } }

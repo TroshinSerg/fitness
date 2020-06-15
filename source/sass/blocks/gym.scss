@@ -15,7 +15,7 @@
 }
 
 .gym__heading {
-  margin: 0 0 9px;
+  margin: 0 0 8px;
 }
 
 .gym__subheading {
@@ -29,7 +29,7 @@
 }
 
 .gym__text p + p {
-  margin-top: 9px;
+  margin-top: 7px;
 }
 
 .gym__aside {
@@ -135,6 +135,7 @@
 
 .gym__video-icon {
   align-self: center;
+  margin-left: 5px;
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -164,6 +165,10 @@
     margin: 0 auto 45px;
     padding-top: 0;
     text-align: center;
+  }
+
+  .gym__heading {
+    margin-bottom: 10px;
   }
 
   .gym__subheading {
@@ -222,7 +227,7 @@
 
 @media screen and (max-width: $mobile-width) {
   .gym {
-    padding: 67px 0;
+    padding: 68px 0 70px;
   }
 
   .gym__content {

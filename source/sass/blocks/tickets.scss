@@ -22,7 +22,7 @@
 }
 
 .tickets__heading {
-  margin: 0 0 39px;
+  margin: 0 0 35px;
   text-align: center;
 }
 
@@ -34,8 +34,8 @@
   flex-wrap: wrap;
   justify-content: space-between;
   min-width: 341px;
-  margin: 0 auto 39px;
-  padding-bottom: 14px;
+  margin: 0 auto 37px;
+  padding-bottom: 11px;
   border-bottom: solid 2px rgba(120, 120, 120, 0.2);
 }
 
@@ -67,7 +67,7 @@
     content: "";
     position: absolute;
     left: 50%;
-    bottom: -16px;
+    bottom: -13px;
     transform: translateX(-50%);
     width: 0;
     height: 2px;
@@ -120,7 +120,7 @@
 
   .tickets__inner {
     &::before {
-      bottom: -227px;
+      bottom: -225px;
       right: -38px;
       width: 346px;
       height: 444px;
@@ -128,13 +128,13 @@
   }
 
   .tickets__heading {
-    margin-bottom: 31px;
+    margin-bottom: 30px;
   }
 
   .tickets__tabs-nav {
     min-width: 332px;
     margin-bottom: 44px;
-    padding-bottom: 15px;
+    padding-bottom: 12px;
   }
 
   .tickets__tabs-nav-btn {
@@ -142,7 +142,7 @@
 
     &--active {
       &::before {
-        bottom: -17px;
+        bottom: -14px;
       }
     }
   }
@@ -154,7 +154,7 @@
   .tickets__card {
     width: 100%;
     max-width: 442px;
-    margin: 0 auto 40px;
+    margin: 0 auto 39px;
 
     &:last-child {
       margin-bottom: 0;
@@ -164,7 +164,7 @@
 
 @media screen and (max-width: $mobile-width) {
   .tickets {
-    padding: 70px 0;
+    padding: 68px 0 70px;
   }
 
   .tickets__inner {
@@ -195,7 +195,7 @@
   }
 
   .tickets__card {
-    margin-bottom: 35px;
+    margin-bottom: 34px;
 
     &:last-child {
       margin-bottom: 0;
