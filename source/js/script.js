@@ -18,8 +18,8 @@ function onTabsBtnClick(evt) {
   evt.preventDefault();
   var target = $(evt.currentTarget).attr('href');
 
-  $(evt.currentTarget).siblings().removeClass('tickets__tabs-nav-btn--active').attr('disabled', false);
-  $(evt.currentTarget).addClass('tickets__tabs-nav-btn--active').attr('disabled', true);
+  $(evt.currentTarget).siblings().removeClass('tickets__tabs-nav-btn--active');
+  $(evt.currentTarget).addClass('tickets__tabs-nav-btn--active');
 
   $(target).addClass('tickets__tabs-content--active').siblings().removeClass('tickets__tabs-content--active');
 }
