@@ -8,6 +8,8 @@
 <path d="M18.7186 4.51392C18.4253 4.51392 18.1865 4.75269 18.1865 5.04602C18.1865 5.33936 18.4253 5.57812 18.7186 5.57812C19.0121 5.57812 19.2509 5.33954 19.2509 5.04602C19.2509 4.7525 19.0121 4.51392 18.7186 4.51392Z" fill="white"/>
 </symbol><symbol id="icon-play" viewBox="0 0 13 15">
 <path d="M13 7.5L0.249999 14.8612L0.25 0.138783L13 7.5Z" fill="white"/>
+</symbol><symbol id="icon-prev" viewBox="0 0 18 34">
+  <path d="M17 1L1 17l16 16" stroke="#AFAFAF"/>
 </symbol><symbol id="icon-rub" viewBox="0 0 30 42">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5 6H10V17H18.5C21.5376 17 24 14.5376 24 11.5C24 8.46243 21.5376 6 18.5 6ZM4 0V23H18.5C24.8513 23 30 17.8513 30 11.5C30 5.14873 24.8513 0 18.5 0H4Z" fill="#102654"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 17H6V23H0V17Z" fill="#102654"/>

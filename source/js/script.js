@@ -23,3 +23,30 @@ function onTabsBtnClick(evt) {
 
   $(target).addClass('tickets__tabs-content--active').siblings().removeClass('tickets__tabs-content--active');
 }
+
+$(document).ready(function () {
+  var mySwiper = new Swiper('.coaches__slider .swiper-container', {
+    speed: 800,
+    navigation: {
+      nextEl: '.coaches__slider-btn--next',
+      prevEl: '.coaches__slider-btn--prev'
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 0
+      },
+      768: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 30
+      },
+      1200: {
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+        spaceBetween: 40
+      }
+    }
+  });
+});

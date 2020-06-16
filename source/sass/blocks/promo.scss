@@ -1,5 +1,5 @@
 .promo {
-  padding: 120px 0;
+  padding: 120px 0 0;
 }
 
 .promo__inner {
@@ -124,7 +124,7 @@
 
 @media screen and (max-width: $tablet-width) {
   .promo {
-    padding: 100px 0;
+    padding: 100px 0 0;
   }
 
   .promo__inner {
@@ -199,7 +199,7 @@
 
 @media screen and (max-width: $mobile-width) {
   .promo {
-    padding: 69px 0 70px;
+    padding: 69px 0 0;
   }
 
   .promo__inner {
