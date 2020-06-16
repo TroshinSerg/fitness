@@ -1061,39 +1061,6 @@ button.swiper-pagination-bullet {
   .heading {
     font-size: 32px; } }
 
-.slider {
-  width: 100%;
-  overflow: hidden; }
-
-.slider__track {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  min-width: 290px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-
-.slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 260px;
-  height: 150px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  background-color: #e8e8e8;
-  font-size: 36px; }
-
-.slide:nth-child(2n) {
-  background-color: #dbdbdb; }
-
 .footer {
   background-color: #030a1a; }
 
@@ -1740,7 +1707,8 @@ button.swiper-pagination-bullet {
     background-color: #d10a42; }
   .tickets__tabs-nav-btn--active {
     position: relative;
-    color: #102654; }
+    color: #102654;
+    pointer-events: none; }
     .tickets__tabs-nav-btn--active::before {
       width: 100%;
       -webkit-transition: width 0.3s ease;
