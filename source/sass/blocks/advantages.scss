@@ -66,10 +66,10 @@
   font-size: 71px;
   line-height: 1;
   font-weight: 700;
-  /*background-size: 50% auto;
-  background-image: linear-gradient(135deg, #d10a42, #0041ca);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;*/
+
+  /*background-image: linear-gradient(135deg, #d10a42, #0041ca);
+  background-clip: text;
+  text-fill-color: transparent;*/
 }
 
 .advantages__item-num-text {
@@ -122,7 +122,7 @@
 
 @media screen and (max-width: $tablet-width) {
   .advantages {
-    padding: 100px 0;
+    padding: 100px 0 94px;
   }
 
   .advantages__heading {
