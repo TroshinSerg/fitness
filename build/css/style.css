@@ -1990,10 +1990,10 @@ button.swiper-pagination-bullet {
     max-width: 455px;
     margin: 0 auto; }
   .promo__image img {
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
+    left: 38%;
+    -webkit-transform: translateX(-38%);
+        -ms-transform: translateX(-38%);
+            transform: translateX(-38%);
     width: auto;
     height: 116%; } }
 
