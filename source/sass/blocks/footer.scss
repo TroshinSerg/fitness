@@ -1,3 +1,196 @@
 .footer {
+  padding: 36px 0;
   background-color: $dark-color;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__logo {
+  margin-top: 9px;
+  margin-right: 40px;
+  align-self: center;
+  flex-shrink: 0;
+}
+
+.footer__menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 0 20px;
+  padding: 0;
+  align-self: center;
+}
+
+.footer__menu-item {
+  margin-right: 40px;
+  padding: 5px 0;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.footer__menu-link {
+  font-size: 14px;
+  line-height: 1.14;
+  color: $white-color;
+  font-weight: 400;
+  transition: opacity 0.3s ease;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.footer__social {
+  margin-left: 40px;
+  align-self: center;
+}
+
+@media screen and (max-width: $tablet-width) {
+  .footer {
+    padding: 39px 0;
+  }
+
+  .footer__logo {
+    display: block;
+    width: 82px;
+    margin-top: 4px;
+  }
+
+  .footer__logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .footer__menu-item {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: $mobile-width) {
+  .footer {
+    padding: 46px 0 44px;
+  }
+
+  .footer__inner {
+    position: relative;
+    display: block;
+  }
+
+  .footer__logo {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 68px;
+  }
+
+  .footer__menu {
+    display: grid;
+    margin-left: 0;
+    margin-bottom: 12px;
+    grid-template-columns: 90px 90px;
+    grid-column-gap: 70px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 68px;
+      height: 20px;
+      margin-bottom: 19px;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+  }
+
+  .footer__menu-item {
+    //margin-right: 70px;
+    margin-bottom: 16px;
+    padding: 0;
+
+    &--services {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+
+    &--actions {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+
+    &--tickets {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+
+    &--coaches {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+
+    &--board {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+  }
+
+  .footer__menu-link {
+    font-size: 16px;
+  }
+
+  .footer__social {
+    margin: 0;
+  }
+}
+
+
+@media all and (-ms-high-contrast: none) and (max-width: $mobile-width), (-ms-high-contrast: active) and (max-width: $mobile-width) {
+  .footer__menu {
+    grid-template-columns: 90px 70px 90px;
+  }
+
+  .footer__menu-item {
+    &--actions {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+
+    &--coaches {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+
+    &--board {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+  }
 }

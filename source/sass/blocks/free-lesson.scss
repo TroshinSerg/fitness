@@ -75,8 +75,21 @@
 
 @media screen and (max-width: $tablet-width) {
   .free-lesson {
+    position: relative;
     padding: 70px 0 69px 88px;
-    box-shadow: -90px 0 0 0 $base-color, 90px 0 0 0 $base-color;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      z-index: -1;
+      transform: translateX(-50%);
+      width: calc(100% + 200px);
+      height: 100%;
+      background-color: $base-color;
+    }
+    //box-shadow: -90px 0 0 0 $base-color, 90px 0 0 0 $base-color;
   }
 
   .free-lesson__heading {
