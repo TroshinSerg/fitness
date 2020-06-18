@@ -1,5 +1,6 @@
 .coaches {
   padding: 117px 0 120px;
+  overflow: hidden;
 }
 
 .coaches__heading {
@@ -110,8 +111,9 @@
 .coaches__item-list {
   list-style: none;
   max-width: 160px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
+  align-self: center;
   transform: translateX(5px);
 }
 

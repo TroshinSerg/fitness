@@ -25,7 +25,8 @@ function onTabsBtnClick(evt) {
 }
 
 $(document).ready(function () {
-  var mySwiper = new Swiper('.coaches__slider .swiper-container', {
+  /* eslint-disable no-new */
+  new Swiper('.coaches__slider .swiper-container', {
     speed: 800,
     navigation: {
       nextEl: '.coaches__slider-btn--next',
@@ -47,6 +48,17 @@ $(document).ready(function () {
         slidesPerGroup: 4,
         spaceBetween: 40
       }
+    }
+  });
+});
+
+$(document).ready(function () {
+  /* eslint-disable no-new */
+  new Swiper('.reviews__slider .swiper-container', {
+    speed: 800,
+    navigation: {
+      nextEl: '.reviews__slider-btn--next',
+      prevEl: '.reviews__slider-btn--prev'
     }
   });
 });

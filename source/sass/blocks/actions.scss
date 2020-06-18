@@ -1,5 +1,5 @@
 .actions {
-  padding: 118px 0 120px;
+  padding: 118px 0 0;
 }
 
 .actions__inner {
@@ -187,7 +187,7 @@
 
 @media screen and (max-width: $tablet-width) {
   .actions {
-    padding: 100px 0;
+    padding: 100px 0 0;
   }
 
   .actions__inner {
@@ -236,7 +236,7 @@
 
 @media screen and (max-width: $mobile-width) {
   .actions {
-    padding: 68px 0 70px;
+    padding: 68px 0 0;
   }
 
   .actions__heading {
