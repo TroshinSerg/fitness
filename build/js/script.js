@@ -2,13 +2,17 @@
 
 var headerBtn = $('.header__btn');
 var tabsNavButtons = $('.tickets__tabs-nav-btn');
+var footerMenulinks = $('.footer__menu-link');
 
-headerBtn.click(onHeaderBtnClick);
+headerBtn.click(onAnchorClick);
 tabsNavButtons.each(function (index, item) {
   $(item).click(onTabsBtnClick);
 });
+footerMenulinks.each(function (index, item) {
+  $(item).click(onAnchorClick);
+});
 
-function onHeaderBtnClick(evt) {
+function onAnchorClick(evt) {
   var href = $(evt.currentTarget).attr('href');
   $('html, body').animate({scrollTop: $(href).offset().top}, 1000);
   return false;
@@ -25,7 +29,8 @@ function onTabsBtnClick(evt) {
 }
 
 $(document).ready(function () {
-  var mySwiper = new Swiper('.coaches__slider .swiper-container', {
+  /* eslint-disable no-new */
+  new Swiper('.coaches__slider .swiper-container', {
     speed: 800,
     navigation: {
       nextEl: '.coaches__slider-btn--next',
@@ -47,6 +52,17 @@ $(document).ready(function () {
         slidesPerGroup: 4,
         spaceBetween: 40
       }
+    }
+  });
+});
+
+$(document).ready(function () {
+  /* eslint-disable no-new */
+  new Swiper('.reviews__slider .swiper-container', {
+    speed: 800,
+    navigation: {
+      nextEl: '.reviews__slider-btn--next',
+      prevEl: '.reviews__slider-btn--prev'
     }
   });
 });

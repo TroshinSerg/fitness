@@ -20,7 +20,7 @@
   <div style="display: none">
     <include src="build/img/sprite.svg"></include>
   </div>
-  <header class="header">
+  <header class="header" id="header">
     <div class="header__inner container">
       <div class="header__top">
         <a class="header__logo">
@@ -90,181 +90,183 @@
         </div>
       </div>
     </section>
-    <section class="tickets" id="tickets">
-      <div class="tickets__inner container">
-        <h2 class="tickets__heading heading">Абонементы</h2>
-        <div class="tickets__tabs">
-          <div class="tickets__tabs-nav">
-            <a class="tickets__tabs-nav-btn tickets__tabs-nav-btn--active" href="#month">1 месяц</a>
-            <a class="tickets__tabs-nav-btn" href="#halfYear">6 месяцев</a>
-            <a class="tickets__tabs-nav-btn" href="#year">12 месяцев</a>
-          </div>
+    <div class="page__wrapper">
+      <section class="tickets" id="tickets">
+        <div class="tickets__inner container">
+          <h2 class="tickets__heading heading">Абонементы</h2>
+          <div class="tickets__tabs">
+            <div class="tickets__tabs-nav">
+              <a class="tickets__tabs-nav-btn tickets__tabs-nav-btn--active" href="#month">1 месяц</a>
+              <a class="tickets__tabs-nav-btn" href="#halfYear">6 месяцев</a>
+              <a class="tickets__tabs-nav-btn" href="#year">12 месяцев</a>
+            </div>
 
-          <div class="tickets__tabs-content tickets__tabs-content--active" id="month">
-            <ul class="tickets__list">
-              <li class="tickets__card card">
-                <div class="card__inner">
-                  <h3 class="card__heading">С тренером</h3>
-                  <div class="card__worktime">12 занятий</div>
-                  <div class="card__price">
-                    <span class="card__price-text" data-price="5000">5000</span>
-                    <svg class="card__price-currency" width="30" height="42" role="img" aria-label="Рублей">
-                      <use xlink:href="#icon-rub"></use>
-                    </svg>
+            <div class="tickets__tabs-content tickets__tabs-content--active" id="month">
+              <ul class="tickets__list">
+                <li class="tickets__card card">
+                  <div class="card__inner">
+                    <h3 class="card__heading">С тренером</h3>
+                    <div class="card__worktime">12 занятий</div>
+                    <div class="card__price">
+                      <span class="card__price-text" data-price="5000">5000</span>
+                      <svg class="card__price-currency" width="30" height="42" role="img" aria-label="Рублей">
+                        <use xlink:href="#icon-rub"></use>
+                      </svg>
+                    </div>
+                    <a class="card__btn" href="#">Купить абонемент</a>
                   </div>
-                  <a class="card__btn" href="#">Купить абонемент</a>
-                </div>
-              </li>
-              <li class="tickets__card card card--popular">
-                <div class="card__inner">
-                  <h3 class="card__heading">Дневной</h3>
-                  <div class="card__worktime">с 8:00 до 17:00 </div>
-                  <div class="card__price">
-                    <span class="card__price-text" data-price="1700">1700</span>
-                    <svg class="card__price-currency" width="30" height="42" role="img" aria-label="Рублей">
-                      <use xlink:href="#icon-rub"></use>
-                    </svg>
+                </li>
+                <li class="tickets__card card card--popular">
+                  <div class="card__inner">
+                    <h3 class="card__heading">Дневной</h3>
+                    <div class="card__worktime">с 8:00 до 17:00 </div>
+                    <div class="card__price">
+                      <span class="card__price-text" data-price="1700">1700</span>
+                      <svg class="card__price-currency" width="30" height="42" role="img" aria-label="Рублей">
+                        <use xlink:href="#icon-rub"></use>
+                      </svg>
+                    </div>
+                    <a class="card__btn" href="#">Купить абонемент</a>
                   </div>
-                  <a class="card__btn" href="#">Купить абонемент</a>
-                </div>
-              </li>
-              <li class="tickets__card card">
-                <div class="card__inner">
-                  <h3 class="card__heading">Полный день</h3>
-                  <div class="card__worktime">с 8:00 до 22:00</div>
-                  <div class="card__price">
-                    <span class="card__price-text" data-price="2700">2700</span>
-                    <svg class="card__price-currency" width="30" height="42" role="img" aria-label="Рублей">
-                      <use xlink:href="#icon-rub"></use>
-                    </svg>
+                </li>
+                <li class="tickets__card card">
+                  <div class="card__inner">
+                    <h3 class="card__heading">Полный день</h3>
+                    <div class="card__worktime">с 8:00 до 22:00</div>
+                    <div class="card__price">
+                      <span class="card__price-text" data-price="2700">2700</span>
+                      <svg class="card__price-currency" width="30" height="42" role="img" aria-label="Рублей">
+                        <use xlink:href="#icon-rub"></use>
+                      </svg>
+                    </div>
+                    <a class="card__btn" href="#">Купить абонемент</a>
                   </div>
-                  <a class="card__btn" href="#">Купить абонемент</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="tickets__tabs-content" id="halfYear">
-            <ul class="tickets__list">
-              <li class="tickets__card card">
-                <div class="card__inner">
-                  <h3 class="card__heading">С тренером</h3>
-                  <div class="card__worktime">72 занятий</div>
-                  <div class="card__price">
-                    <span class="card__price-text" data-price="24000">24000</span>
-                    <svg class="card__price-currency" width="30" height="42" role="img" aria-label="Рублей">
-                      <use xlink:href="#icon-rub"></use>
-                    </svg>
+                </li>
+              </ul>
+            </div>
+            <div class="tickets__tabs-content" id="halfYear">
+              <ul class="tickets__list">
+                <li class="tickets__card card">
+                  <div class="card__inner">
+                    <h3 class="card__heading">С тренером</h3>
+                    <div class="card__worktime">72 занятий</div>
+                    <div class="card__price">
+                      <span class="card__price-text" data-price="24000">24000</span>
+                      <svg class="card__price-currency" width="30" height="42" role="img" aria-label="Рублей">
+                        <use xlink:href="#icon-rub"></use>
+                      </svg>
+                    </div>
+                    <a class="card__btn" href="#">Купить абонемент</a>
                   </div>
-                  <a class="card__btn" href="#">Купить абонемент</a>
-                </div>
-              </li>
-              <li class="tickets__card card card--popular">
-                <div class="card__inner">
-                  <h3 class="card__heading">Дневной</h3>
-                  <div class="card__worktime">с 8:00 до 17:00 </div>
-                  <div class="card__price">
-                    <span class="card__price-text" data-price="7100">7100</span>
-                    <svg class="card__price-currency" width="30" height="42" role="img" aria-label="Рублей">
-                      <use xlink:href="#icon-rub"></use>
-                    </svg>
+                </li>
+                <li class="tickets__card card card--popular">
+                  <div class="card__inner">
+                    <h3 class="card__heading">Дневной</h3>
+                    <div class="card__worktime">с 8:00 до 17:00 </div>
+                    <div class="card__price">
+                      <span class="card__price-text" data-price="7100">7100</span>
+                      <svg class="card__price-currency" width="30" height="42" role="img" aria-label="Рублей">
+                        <use xlink:href="#icon-rub"></use>
+                      </svg>
+                    </div>
+                    <a class="card__btn" href="#">Купить абонемент</a>
                   </div>
-                  <a class="card__btn" href="#">Купить абонемент</a>
-                </div>
-              </li>
-              <li class="tickets__card card">
-                <div class="card__inner">
-                  <h3 class="card__heading">Полный день</h3>
-                  <div class="card__worktime">с 8:00 до 22:00</div>
-                  <div class="card__price">
-                    <span class="card__price-text" data-price="11400">11400</span>
-                    <svg class="card__price-currency" width="30" height="42" role="img" aria-label="Рублей">
-                      <use xlink:href="#icon-rub"></use>
-                    </svg>
+                </li>
+                <li class="tickets__card card">
+                  <div class="card__inner">
+                    <h3 class="card__heading">Полный день</h3>
+                    <div class="card__worktime">с 8:00 до 22:00</div>
+                    <div class="card__price">
+                      <span class="card__price-text" data-price="11400">11400</span>
+                      <svg class="card__price-currency" width="30" height="42" role="img" aria-label="Рублей">
+                        <use xlink:href="#icon-rub"></use>
+                      </svg>
+                    </div>
+                    <a class="card__btn" href="#">Купить абонемент</a>
                   </div>
-                  <a class="card__btn" href="#">Купить абонемент</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="tickets__tabs-content" id="year">
-            <ul class="tickets__list">
-              <li class="tickets__card card">
-                <div class="card__inner">
-                  <h3 class="card__heading">С тренером</h3>
-                  <div class="card__worktime">144 занятий</div>
-                  <div class="card__price">
-                    <span class="card__price-text" data-price="44000">44000</span>
-                    <svg class="card__price-currency" width="30" height="42" role="img" aria-label="Рублей">
-                      <use xlink:href="#icon-rub"></use>
-                    </svg>
+                </li>
+              </ul>
+            </div>
+            <div class="tickets__tabs-content" id="year">
+              <ul class="tickets__list">
+                <li class="tickets__card card">
+                  <div class="card__inner">
+                    <h3 class="card__heading">С тренером</h3>
+                    <div class="card__worktime">144 занятий</div>
+                    <div class="card__price">
+                      <span class="card__price-text" data-price="44000">44000</span>
+                      <svg class="card__price-currency" width="30" height="42" role="img" aria-label="Рублей">
+                        <use xlink:href="#icon-rub"></use>
+                      </svg>
+                    </div>
+                    <a class="card__btn" href="#">Купить абонемент</a>
                   </div>
-                  <a class="card__btn" href="#">Купить абонемент</a>
-                </div>
-              </li>
-              <li class="tickets__card card card--popular">
-                <div class="card__inner">
-                  <h3 class="card__heading">Дневной</h3>
-                  <div class="card__worktime">с 8:00 до 17:00 </div>
-                  <div class="card__price">
-                    <span class="card__price-text" data-price="12000">12000</span>
-                    <svg class="card__price-currency" width="30" height="42" role="img" aria-label="Рублей">
-                      <use xlink:href="#icon-rub"></use>
-                    </svg>
+                </li>
+                <li class="tickets__card card card--popular">
+                  <div class="card__inner">
+                    <h3 class="card__heading">Дневной</h3>
+                    <div class="card__worktime">с 8:00 до 17:00 </div>
+                    <div class="card__price">
+                      <span class="card__price-text" data-price="12000">12000</span>
+                      <svg class="card__price-currency" width="30" height="42" role="img" aria-label="Рублей">
+                        <use xlink:href="#icon-rub"></use>
+                      </svg>
+                    </div>
+                    <a class="card__btn" href="#">Купить абонемент</a>
                   </div>
-                  <a class="card__btn" href="#">Купить абонемент</a>
-                </div>
-              </li>
-              <li class="tickets__card card">
-                <div class="card__inner">
-                  <h3 class="card__heading">Полный день</h3>
-                  <div class="card__worktime">с 8:00 до 22:00</div>
-                  <div class="card__price">
-                    <span class="card__price-text" data-price="24400">24400</span>
-                    <svg class="card__price-currency" width="30" height="42" role="img" aria-label="Рублей">
-                      <use xlink:href="#icon-rub"></use>
-                    </svg>
+                </li>
+                <li class="tickets__card card">
+                  <div class="card__inner">
+                    <h3 class="card__heading">Полный день</h3>
+                    <div class="card__worktime">с 8:00 до 22:00</div>
+                    <div class="card__price">
+                      <span class="card__price-text" data-price="24400">24400</span>
+                      <svg class="card__price-currency" width="30" height="42" role="img" aria-label="Рублей">
+                        <use xlink:href="#icon-rub"></use>
+                      </svg>
+                    </div>
+                    <a class="card__btn" href="#">Купить абонемент</a>
                   </div>
-                  <a class="card__btn" href="#">Купить абонемент</a>
-                </div>
-              </li>
-            </ul>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="promo">
-      <div class="promo__inner container">
-        <div class="promo__content">
-          <h2 class="promo__heading heading">Super games</h2>
-          <table class="promo__table">
-            <tbody>
-              <tr>
-                <td class="promo__table-th">Дата</td>
-                <td class="promo__table-cell">
-                  <time datetime="2019-03-07">
-                    7 <span class="promo__table-small">Марта 2019</span>
-                  </time>
-                </td>
-              </tr>
-              <tr>
-                <td class="promo__table-th">Время</td>
-                <td class="promo__table-cell">12:00</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="promo__text">Ежегодные соревнования по CrossFit</div>
-          <a class="promo__btn" href="#">Заполнить заявку</a>
+      </section>
+      <section class="promo">
+        <div class="promo__inner container">
+          <div class="promo__content">
+            <h2 class="promo__heading heading">Super games</h2>
+            <table class="promo__table">
+              <tbody>
+                <tr>
+                  <td class="promo__table-th">Дата</td>
+                  <td class="promo__table-cell">
+                    <time datetime="2019-03-07">
+                      7 <span class="promo__table-small">Марта 2019</span>
+                    </time>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="promo__table-th">Время</td>
+                  <td class="promo__table-cell">12:00</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="promo__text">Ежегодные соревнования по CrossFit</div>
+            <a class="promo__btn" href="#">Заполнить заявку</a>
+          </div>
+          <div class="promo__image">
+            <picture>
+              <source type="image/webp" srcset="img/games.webp 1x, img/games@2x.webp 2x">
+              <!-- 1х: 780px; 2x: 1560px -->
+              <img src="img/games.jpg" srcset="img/games@2x.jpg 2x" alt="Участник супер игр">
+            </picture>
+          </div>
         </div>
-        <div class="promo__image">
-          <picture>
-            <source type="image/webp" srcset="img/games.webp 1x, img/games@2x.webp 2x">
-            <!-- 1х: 780px; 2x: 1560px -->
-            <img src="img/games.jpg" srcset="img/games@2x.jpg 2x" alt="Участник супер игр">
-          </picture>
-        </div>
-      </div>
-    </section>
-    <section class="coaches">
+      </section>
+    </div>
+    <section class="coaches" id="coaches">
       <div class="container">
         <h2 class="coaches__heading heading">Тренеры</h2>
         <div class="coaches__slider">
@@ -498,7 +500,7 @@
         </ul>
       </div>
     </section>
-    <section class="actions">
+    <section class="actions" id="actions">
       <div class="actions__inner container">
         <h2 class="actions__heading heading">Акции</h2>
 
@@ -593,7 +595,7 @@
               <input class="free-lesson__field" type="text" name="name" placeholder="Имя">
             </label>
             <label class="free-lesson__label" aria-label="Телефон">
-              <input class="free-lesson__field" type="tel" name="phone" placeholder="Телефон" required>
+              <input class="free-lesson__field js-phone" type="tel" name="phone" placeholder="Телефон">
             </label>
             <button class="free-lesson__btn" type="submit">Отправить</button>
           </form>
@@ -638,16 +640,16 @@
 
       <ul class="footer__menu">
         <li class="footer__menu-item footer__menu-item--services">
-          <a class="footer__menu-link" href="#">Услуги</a>
+          <a class="footer__menu-link" href="#header">Услуги</a>
         </li>
         <li class="footer__menu-item footer__menu-item--tickets">
-          <a class="footer__menu-link" href="#">Абонементы</a>
+          <a class="footer__menu-link" href="#tickets">Абонементы</a>
         </li>
         <li class="footer__menu-item footer__menu-item--actions">
-          <a class="footer__menu-link" href="#">Акции</a>
+          <a class="footer__menu-link" href="#actions">Акции</a>
         </li>
         <li class="footer__menu-item footer__menu-item--coaches">
-          <a class="footer__menu-link" href="#">Тренеры</a>
+          <a class="footer__menu-link" href="#coaches">Тренеры</a>
         </li>
         <li class="footer__menu-item footer__menu-item--board">
           <a class="footer__menu-link" href="#">Расписание</a>

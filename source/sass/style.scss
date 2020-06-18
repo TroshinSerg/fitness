@@ -2,7 +2,7 @@
 @import "normalize";
 @import "fonts.scss";
 @import "global.scss";
-@import "swiper";
+@import "vendor/swiper";
 @import "blocks/container.scss";
 @import "blocks/heading.scss";
 @import "blocks/social.scss";
@@ -19,3 +19,4 @@
 @import "blocks/free-lesson.scss";
 @import "blocks/contacts.scss";
 @import "blocks/prefooter.scss";
+@import "blocks/page.scss";

@@ -16,7 +16,6 @@
     border-top: none;
     background-image: none;
     overflow: hidden;
-    //background-image: linear-gradient(to bottom, red 324px, transparent 324px);
   }
 
   .prefooter__inner {
@@ -25,12 +24,5 @@
 
   .prefooter__item {
     width: 100%;
-  }
-}
-
-@media screen and (max-width: $tablet-width) {
-  .prefooter {
-    border-top: none;
-    //background-image: linear-gradient(to bottom, red 324px, transparent 324px);
   }
 }

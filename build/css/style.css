@@ -1584,6 +1584,7 @@ button.swiper-pagination-bullet {
   -webkit-transform: translateX(-16.54%);
       -ms-transform: translateX(-16.54%);
           transform: translateX(-16.54%);
+  background-color: #7886a5;
   background-repeat: no-repeat;
   background-position: -2px -25px;
   background-size: 107% auto;
@@ -1874,8 +1875,7 @@ button.swiper-pagination-bullet {
 
 .tickets {
   padding: 120px 0;
-  background-color: #f8f9fc;
-  overflow: hidden; }
+  background-color: #f8f9fc; }
 
 .tickets__inner {
   position: relative; }
@@ -3338,6 +3338,5 @@ button.swiper-pagination-bullet {
   .prefooter__item {
     width: 100%; } }
 
-@media screen and (max-width: 1199px) {
-  .prefooter {
-    border-top: none; } }
+.page__wrapper {
+  overflow: hidden; }
