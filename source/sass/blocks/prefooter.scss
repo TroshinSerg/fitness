@@ -1,0 +1,35 @@
+.prefooter {
+  border-top: solid 1px $base-color;
+  background-image: linear-gradient(to right, $base-color 50%, transparent 50%);
+}
+
+.prefooter__inner {
+  display: flex;
+}
+
+.prefooter__item {
+  width: 50%;
+}
+
+@media screen and (max-width: $tablet-width) {
+  .prefooter {
+    border-top: none;
+    background-image: none;
+    //background-image: linear-gradient(to bottom, red 324px, transparent 324px);
+  }
+
+  .prefooter__inner {
+    display: block;
+  }
+
+  .prefooter__item {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: $tablet-width) {
+  .prefooter {
+    border-top: none;
+    //background-image: linear-gradient(to bottom, red 324px, transparent 324px);
+  }
+}
