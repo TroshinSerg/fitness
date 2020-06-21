@@ -1,3 +1,38 @@
+.page--list main {
+  padding-top: 100px;
+  background-repeat: no-repeat;
+  background-image: url("../img/hero-bg.jpg");
+  background-size: cover;
+}
+
 .page__wrapper {
   overflow: hidden;
+}
+
+.page__heading {
+  color: $white-color;
+}
+
+.page__pages {
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.page__pages-link {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 24px;
+  color: $white-color;
+  transition: opacity 0.3s ease;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }

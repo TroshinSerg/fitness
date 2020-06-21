@@ -86,9 +86,9 @@ gulp.task("html", function () {
 });
 
 gulp.task("scripts", function() {
-  return gulp.src("source/js/script.js")
+  return gulp.src("source/js/plane.js")
     .pipe(plumber())
-    .pipe(uglify())
+    //.pipe(uglify())
     .pipe(rename({suffix: ".min"}))
     .pipe(gulp.dest("build/js"))
     .pipe(server.stream());

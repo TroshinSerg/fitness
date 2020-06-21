@@ -3338,5 +3338,238 @@ button.swiper-pagination-bullet {
   .prefooter__item {
     width: 100%; } }
 
+.plan {
+  padding: 118px 0;
+  font-size: 18px;
+  color: #15367a;
+  text-align: center;
+  font-weight: 400; }
+
+.plan__heading {
+  margin: 0 0 52px; }
+
+.plan__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.plan__times {
+  list-style: none;
+  margin: 0 8px 0 0;
+  padding: 0;
+  width: 66px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -ms-flex-negative: 0;
+      flex-shrink: 0; }
+
+.plan__times-item {
+  height: 110px;
+  margin-bottom: 8px;
+  line-height: 106px;
+  border: solid 2px #1c3374; }
+  .plan__times-item:last-child {
+    margin-bottom: 0; }
+  .plan__times-item--selected {
+    border-color: #ed0233;
+    background-color: #ed0233;
+    color: #ffffff; }
+
+.plan__days {
+  list-style: none;
+  margin: 0 0 8px 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.plan__days-item {
+  width: 148px;
+  line-height: 62px;
+  border: solid 2px #15367a;
+  background-color: #ffffff;
+  -ms-flex-negative: 0;
+      flex-shrink: 0; }
+  .plan__days-item--selected {
+    border-color: #ed0233;
+    background-color: #ed0233;
+    color: #ffffff; }
+
+.plan__days-item + .plan__days-item {
+  margin-left: 8px; }
+
+.plan__grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.plan__column {
+  width: 148px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0; }
+
+.plan__column + .plan__column {
+  margin-left: 8px; }
+
+.plan__column-item {
+  display: block;
+  width: 100%;
+  height: 110px;
+  margin-bottom: 8px;
+  padding: 0;
+  line-height: 110px;
+  border: none;
+  background-color: #f8f9fc; }
+  .plan__column-item:hover, .plan__column-item:focus {
+    outline: none;
+    background-color: #ffffff;
+    color: #ed0233;
+    -webkit-box-shadow: inset 0 0 0 2px #ed0233;
+            box-shadow: inset 0 0 0 2px #ed0233; }
+  .plan__column-item:last-child {
+    margin-bottom: 0; }
+
+@media screen and (max-width: 1199px) {
+  .plan {
+    padding: 80px 0; }
+  .plan__content {
+    max-width: 678px;
+    margin: 0 auto; }
+  .plan__heading {
+    margin-bottom: 41px; }
+  .plan__times {
+    width: 62px;
+    margin-top: 73px;
+    margin-bottom: 12px; }
+  .plan__times-item {
+    height: 108px;
+    line-height: 104px; }
+  .plan__main .scroll-content {
+    padding-bottom: 12px; }
+  .plan__main .scrollbar-thumb-x {
+    cursor: pointer; }
+  .plan__days-item {
+    width: 146px;
+    line-height: 61px;
+    height: 65px; }
+  .plan__column {
+    width: 146px; }
+  .plan__column-item {
+    height: 108px;
+    line-height: 108px; } }
+
+@media screen and (max-width: 767px) {
+  .plan {
+    padding: 69px 0;
+    font-size: 16px; }
+  .plan__heading {
+    margin-bottom: 42px; }
+  .plan__content {
+    position: relative; }
+  .plan__overlay {
+    position: absolute;
+    left: -68px;
+    top: 0;
+    z-index: 1;
+    width: calc(100% + 120px);
+    height: 100%;
+    background-color: red; }
+  .plan__times {
+    width: 60px;
+    margin-top: 68px; }
+    .plan__times--disabled {
+      opacity: 0.5; }
+  .plan__times-item {
+    height: 80px;
+    line-height: 76px; }
+  .plan__main {
+    position: relative;
+    z-index: 2;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
+  .plan__main .scroll-content {
+    padding-top: 68px; }
+  .plan__days {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding-right: 49px; }
+    .plan__days::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 51px;
+      height: 60px;
+      border: solid 2px #1c3374;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='21' height='13' viewBox='0 0 21 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1 1l9.5 10L20 1' stroke='%231C3374' stroke-width='2'/%3e%3c/svg%3e"); }
+    .plan__days--opened::before {
+      -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+              transform: rotate(180deg); }
+  .plan__days--opened .plan__days-item {
+    display: block; }
+  .plan__days-item {
+    display: none;
+    width: 100%;
+    height: 60px;
+    margin-bottom: -2px;
+    line-height: 56px; }
+    .plan__days-item--current {
+      display: block;
+      padding-left: 14px;
+      border-top: solid 2px #1c3374; }
+    .plan__days-item--selected {
+      border-top-color: #ed0233; }
+  .plan__days-item + .plan__days-item {
+    margin-left: 0; }
+  .plan__column {
+    display: none;
+    width: 100%; }
+    .plan__column--active {
+      display: block; }
+  .plan__column + .plan__column {
+    margin-left: 0; }
+  .plan__grid--disabled {
+    opacity: 0.5; }
+  .plan__column-item {
+    height: 80px;
+    line-height: 80px; } }
+
+.page--list main {
+  padding-top: 100px;
+  background-repeat: no-repeat;
+  background-image: url("../img/hero-bg.jpg");
+  background-size: cover; }
+
 .page__wrapper {
   overflow: hidden; }
+
+.page__heading {
+  color: #ffffff; }
+
+.page__pages {
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.page__pages-link {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease; }
+  .page__pages-link:hover, .page__pages-link:focus {
+    outline: none;
+    opacity: 0.8; }
+  .page__pages-link:active {
+    opacity: 0.6; }

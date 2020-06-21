@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Фитнес центр Омск</title>
+  <link rel="preload" href="fonts/Robotocondensedlight.woff2" as="font">
+  <link rel="preload" href="fonts/Robotocondensed.woff2" as="font">
+  <link rel="preload" href="fonts/Robotocondensedbold.woff2" as="font">
+  <link rel="preload" href="fonts/bebasneueregular.woff2" as="font">
+  <link rel="preload" href="fonts/bebasneuebold.woff2" as="font">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script>
+    document.createElement("picture");
+  </script>
+  <script src="js/vendor/picturefill.js" async></script>
+</head>
+<body class="page">
+  <div style="display: none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+  <main>
+    <article class="plan">
+      <div class="container">
+        <h1 class="plan__heading heading">Расписание</h1>
+
+        <div class="plan__content">
+          <ul class="plan__times">
+            <li class="plan__times-item">08:00</li>
+            <li class="plan__times-item">12:00</li>
+            <li class="plan__times-item">18:00</li>
+            <li class="plan__times-item">20:00</li>
+          </ul>
+          <div class="plan__main">
+            <ul class="plan__days">
+              <li class="plan__days-item plan__days-item--current" data-id="0">Понедельник</li>
+              <li class="plan__days-item" data-id="1">Вторник</li>
+              <li class="plan__days-item" data-id="2">Среда</li>
+              <li class="plan__days-item" data-id="3">Четверг</li>
+              <li class="plan__days-item" data-id="4">Пятница</li>
+              <li class="plan__days-item" data-id="5">Суббота</li>
+              <li class="plan__days-item" data-id="6">Воскресенье</li>
+            </ul>
+            <div class="plan__grid">
+              <div class="plan__column plan__column--active" data-id="0">
+                <button class="plan__column-item" type="button">CrossFit</button>
+                <button class="plan__column-item" type="button">Body Sculpt</button>
+                <button class="plan__column-item" type="button">Functional</button>
+                <button class="plan__column-item" type="button">Stretching</button>
+              </div>
+
+              <div class="plan__column" data-id="1">
+                <button class="plan__column-item" type="button">Aerostretching</button>
+                <button class="plan__column-item" type="button">CrossFit</button>
+                <button class="plan__column-item" type="button">Body Sculpt</button>
+                <button class="plan__column-item" type="button">Functional</button>
+              </div>
+
+              <div class="plan__column" data-id="2">
+                <button class="plan__column-item" type="button">Hot Iron</button>
+                <button class="plan__column-item" type="button">Aerostretching</button>
+                <button class="plan__column-item" type="button">CrossFit</button>
+                <button class="plan__column-item" type="button">Body Sculpt</button>
+              </div>
+
+              <div class="plan__column" data-id="3">
+                <button class="plan__column-item" type="button">Pilates</button>
+                <button class="plan__column-item" type="button">Hot Iron</button>
+                <button class="plan__column-item" type="button">Aerostretching</button>
+                <button class="plan__column-item" type="button">CrossFit</button>
+              </div>
+
+              <div class="plan__column" data-id="4">
+                <button class="plan__column-item" type="button">Stretching</button>
+                <button class="plan__column-item" type="button">Pilates</button>
+                <button class="plan__column-item" type="button">Hot Iron</button>
+                <button class="plan__column-item" type="button">Aerostretching</button>
+              </div>
+
+              <div class="plan__column" data-id="5">
+                <button class="plan__column-item" type="button">Functional</button>
+                <button class="plan__column-item" type="button">Stretching</button>
+                <button class="plan__column-item" type="button">Pilates</button>
+                <button class="plan__column-item" type="button">Hot Iron</button>
+              </div>
+
+              <div class="plan__column" data-id="6">
+                <button class="plan__column-item" type="button">Body Sculpt</button>
+                <button class="plan__column-item" type="button">Functional</button>
+                <button class="plan__column-item" type="button">Stretching</button>
+                <button class="plan__column-item" type="button">Pilates</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/vendor/smooth-scrollbar.js"></script>
+  <script src="js/plane.min.js"></script>
+</body>
+</html>

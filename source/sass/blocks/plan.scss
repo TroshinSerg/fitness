@@ -1,0 +1,280 @@
+.plan {
+  padding: 118px 0;
+  font-size: 18px;
+  color: $plan-color;
+  text-align: center;
+  font-weight: 400;
+}
+
+.plan__heading {
+  margin: 0 0 52px;
+}
+
+.plan__content {
+  display: flex;
+}
+
+.plan__times {
+  list-style: none;
+  margin: 0 8px 0 0;
+  padding: 0;
+  width: 66px;
+  align-self: flex-end;
+  flex-shrink: 0;
+}
+
+.plan__times-item {
+  height: 110px;
+  margin-bottom: 8px;
+  line-height: 106px;
+  border: solid 2px $blue-bg-color;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--selected {
+    border-color: $red-color;
+    background-color: $red-color;
+    color: $white-color;
+  }
+}
+
+.plan__days {
+  list-style: none;
+  margin: 0 0 8px 0;
+  padding: 0;
+  display: flex;
+}
+
+.plan__days-item {
+  width: 148px;
+  line-height: 62px;
+  border: solid 2px $plan-color;
+  background-color: $white-color;
+  flex-shrink: 0;
+
+  &--selected {
+    border-color: $red-color;
+    background-color: $red-color;
+    color: $white-color;
+  }
+}
+
+.plan__days-item + .plan__days-item {
+  margin-left: 8px;
+}
+
+.plan__grid {
+  display: flex;
+}
+
+.plan__column {
+  width: 148px;
+  flex-shrink: 0;
+}
+
+.plan__column + .plan__column {
+  margin-left: 8px;
+}
+
+.plan__column-item {
+  display: block;
+  width: 100%;
+  height: 110px;
+  margin-bottom: 8px;
+  padding: 0;
+  line-height: 110px;
+  border: none;
+  background-color: $bg-color;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    background-color: $white-color;
+    color: $red-color;
+    box-shadow: inset 0 0 0 2px $red-color;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: $tablet-width) {
+  .plan {
+    padding: 80px 0;
+  }
+
+  .plan__content {
+    max-width: 678px;
+    margin: 0 auto;
+  }
+
+  .plan__heading {
+    margin-bottom: 41px;
+  }
+
+  .plan__times {
+    width: 62px;
+    margin-top: 73px;
+    margin-bottom: 12px;
+  }
+
+  .plan__times-item {
+    height: 108px;
+    line-height: 104px;
+  }
+
+  .plan__main .scroll-content {
+    padding-bottom: 12px;
+  }
+
+  .plan__main .scrollbar-thumb-x {
+    cursor: pointer;
+  }
+
+  .plan__days-item {
+    width: 146px;
+    line-height: 61px;
+    height: 65px;
+  }
+
+  .plan__column {
+    width: 146px;
+  }
+
+  .plan__column-item {
+    height: 108px;
+    line-height: 108px;
+  }
+}
+
+@media screen and (max-width: $mobile-width) {
+  .plan {
+    padding: 69px 0;
+    font-size: 16px;
+  }
+
+  .plan__heading {
+    margin-bottom: 42px;
+  }
+
+  .plan__content {
+    position: relative;
+  }
+
+  .plan__overlay {
+    position: absolute;
+    left: -68px;
+    top: 0;
+    z-index: 1;
+    width: calc(100% + 120px);
+    height: 100%;
+    background-color: red;
+  }
+
+  .plan__times {
+    width: 60px;
+    margin-top: 68px;
+
+    &--disabled {
+      opacity: 0.5;
+    }
+  }
+
+  .plan__times-item {
+    height: 80px;
+    line-height: 76px;
+  }
+
+  .plan__main {
+    position: relative;
+    z-index: 2;
+    flex-grow: 1;
+  }
+
+  .plan__main .scroll-content {
+    padding-top: 68px;
+  }
+
+  .plan__days {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding-right: 49px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 51px;
+      height: 60px;
+      border: solid 2px $blue-bg-color;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='21' height='13' viewBox='0 0 21 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1 1l9.5 10L20 1' stroke='%231C3374' stroke-width='2'/%3e%3c/svg%3e");
+    }
+
+    &--opened {
+      &::before {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .plan__days--opened .plan__days-item {
+    display: block;
+  }
+
+  .plan__days-item {
+    display: none;
+    width: 100%;
+    height: 60px;
+    margin-bottom: -2px;
+    line-height: 56px;
+
+    &--current {
+      display: block;
+      padding-left: 14px;
+      border-top: solid 2px $blue-bg-color;
+    }
+
+    &--selected {
+      border-top-color: $red-color;
+    }
+  }
+
+  .plan__days-item + .plan__days-item {
+    margin-left: 0;
+  }
+
+  .plan__column {
+    display: none;
+    width: 100%;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  .plan__column + .plan__column {
+    margin-left: 0;
+  }
+
+  .plan__grid {
+    &--disabled {
+      opacity: 0.5;
+    }
+  }
+
+  .plan__column-item {
+    height: 80px;
+    line-height: 80px;
+  }
+}
