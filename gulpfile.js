@@ -86,10 +86,10 @@ gulp.task("html", function () {
 });
 
 gulp.task("scripts", function() {
-  return gulp.src("source/js/plane.js")
+  return gulp.src("source/js/*.js")
     .pipe(plumber())
     //.pipe(uglify())
-    .pipe(rename({suffix: ".min"}))
+    //.pipe(rename({suffix: ".min"}))
     .pipe(gulp.dest("build/js"))
     .pipe(server.stream());
 });

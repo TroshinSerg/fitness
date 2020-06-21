@@ -15,7 +15,6 @@
   }
 }
 
-
 .social__link {
   display: block;
   transition: opacity 0.3s ease;
@@ -41,7 +40,7 @@
   }
 }
 
-@media screen and (max-width: $tablet-width) {
+@media screen and (max-width: $mobile-width) {
   .social__item {
     margin-right: 35px;
   }

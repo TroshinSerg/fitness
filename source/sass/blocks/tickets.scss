@@ -1,23 +1,9 @@
 .tickets {
   padding: 120px 0;
   background-color: $bg-color;
-}
-
-.tickets__inner {
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: -270px;
-    right: -265px;
-    width: 470px;
-    height: 494px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-image: url("../img/damn.png");
-  }
+  background-image: url("../img/damn.png");
+  background-repeat: no-repeat;
+  background-position: left calc((100% - 1200px) / 2 + 1231px) bottom -150px;
 }
 
 .tickets__heading {
@@ -108,14 +94,17 @@
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .tickets__inner {
+  .tickets {
     background-image: url("../img/damn@2x.png");
+    background-size: 470px 494px;
   }
 }
 
 @media screen and (max-width: $tablet-width) {
   .tickets {
     padding: 100px 0;
+    background-position: left calc((100% - 768px) / 2 + 632px) bottom -125px;
+    background-size: 423px auto;
   }
 
   .tickets__inner {
@@ -165,6 +154,7 @@
 @media screen and (max-width: $mobile-width) {
   .tickets {
     padding: 68px 0 70px;
+    background-image: none;
   }
 
   .tickets__inner {

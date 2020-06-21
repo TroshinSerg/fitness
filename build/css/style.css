@@ -1097,7 +1097,7 @@ button.swiper-pagination-bullet {
   .social__item {
     margin-right: 20px; } }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .social__item {
     margin-right: 35px; }
   .social__image--fb {
@@ -1305,7 +1305,8 @@ button.swiper-pagination-bullet {
   padding: 30px 0 47px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../img/hero-bg.jpg"); }
+  background-image: url("../img/hero-bg.jpg");
+  background-color: #980a38; }
 
 .header__inner {
   display: -webkit-box;
@@ -1356,22 +1357,24 @@ button.swiper-pagination-bullet {
 
 .header__heading {
   max-width: 298px;
-  margin: 0 0 55px;
+  margin: 0 0 57px;
   font-family: "Bebas Neue", "Arial", sans-serif;
-  font-size: 110px;
+  font-size: 109px;
   font-weight: 700;
   line-height: 1;
   letter-spacing: 0.029em;
   color: #ffffff;
   text-align: right;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-shadow: 1px 0 0 #ffffff, -1px 0 0 #ffffff, 1px 2px 0 #ffffff, -1px 2px 0 #ffffff; }
 
 .header__city {
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: 11px;
   font-size: 49px;
   font-weight: 400;
-  letter-spacing: 0.03em; }
+  letter-spacing: 0.03em;
+  text-shadow: none; }
 
 .header__list {
   position: absolute;
@@ -1466,10 +1469,10 @@ button.swiper-pagination-bullet {
     padding-top: 55px; }
   .header__heading {
     max-width: 235px;
-    margin-bottom: 41px;
+    margin-bottom: 42px;
     font-size: 86px; }
   .header__city {
-    margin-bottom: 5px;
+    margin-bottom: 4px;
     font-size: 34px; }
   .header__btn {
     max-width: 187px;
@@ -1513,10 +1516,10 @@ button.swiper-pagination-bullet {
   .header__heading {
     max-width: 213px;
     margin-left: auto;
-    margin-bottom: 44px;
+    margin-bottom: 45px;
     font-size: 78px; }
   .header__city {
-    margin-bottom: 11px;
+    margin-bottom: 10px;
     font-size: 28px; }
   .header__btn {
     max-width: none;
@@ -1547,7 +1550,7 @@ button.swiper-pagination-bullet {
   margin: 0 0 8px; }
 
 .gym__subheading {
-  margin-bottom: 39px;
+  margin: 0 0 39px;
   font-size: 18px;
   font-weight: 400; }
 
@@ -1799,7 +1802,7 @@ button.swiper-pagination-bullet {
 
 .card__price-text {
   position: relative;
-  margin-right: 14px;
+  margin-right: 12px;
   font-size: 60px;
   color: #103aae;
   font-weight: 700; }
@@ -1813,6 +1816,10 @@ button.swiper-pagination-bullet {
     line-height: 1;
     color: rgba(232, 232, 232, 0.48);
     pointer-events: none; }
+
+.card__price-currency {
+  font-size: 57px;
+  font-weight: 600; }
 
 .card__btn {
   position: relative;
@@ -1875,21 +1882,10 @@ button.swiper-pagination-bullet {
 
 .tickets {
   padding: 120px 0;
-  background-color: #f8f9fc; }
-
-.tickets__inner {
-  position: relative; }
-  .tickets__inner::before {
-    content: "";
-    position: absolute;
-    bottom: -270px;
-    right: -265px;
-    width: 470px;
-    height: 494px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-image: url("../img/damn.png"); }
+  background-color: #f8f9fc;
+  background-image: url("../img/damn.png");
+  background-repeat: no-repeat;
+  background-position: left calc((100% - 1200px) / 2 + 1231px) bottom -150px; }
 
 .tickets__heading {
   margin: 0 0 35px;
@@ -1976,12 +1972,15 @@ button.swiper-pagination-bullet {
   max-width: 31.03%; }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .tickets__inner {
-    background-image: url("../img/damn@2x.png"); } }
+  .tickets {
+    background-image: url("../img/damn@2x.png");
+    background-size: 470px 494px; } }
 
 @media screen and (max-width: 1199px) {
   .tickets {
-    padding: 100px 0; }
+    padding: 100px 0;
+    background-position: left calc((100% - 768px) / 2 + 632px) bottom -125px;
+    background-size: 423px auto; }
   .tickets__inner::before {
     bottom: -225px;
     right: -38px;
@@ -2008,7 +2007,8 @@ button.swiper-pagination-bullet {
 
 @media screen and (max-width: 767px) {
   .tickets {
-    padding: 68px 0 70px; }
+    padding: 68px 0 70px;
+    background-image: none; }
   .tickets__inner::before {
     display: none; }
   .tickets__heading {
@@ -2030,7 +2030,10 @@ button.swiper-pagination-bullet {
       margin-bottom: 0; } }
 
 .promo {
-  padding: 120px 0 0; }
+  padding: 120px 0 0;
+  background-image: url("../img/damn.png");
+  background-repeat: no-repeat;
+  background-position: left calc((100% - 1200px) / 2 + 1231px) top -344px; }
 
 .promo__inner {
   display: -webkit-box;
@@ -2081,7 +2084,7 @@ button.swiper-pagination-bullet {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.promo__table tr {
+.promo__table-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2089,29 +2092,29 @@ button.swiper-pagination-bullet {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-  .promo__table tr:first-child {
+  .promo__table-row:first-child {
     margin-bottom: 22px; }
-
-.promo__table td {
-  display: block;
-  color: #ffffff;
-  -ms-flex-item-align: start;
-      align-self: flex-start; }
 
 .promo__table-th {
   padding-bottom: 8px;
   font-size: 18px;
   line-height: 1;
-  font-weight: 400; }
+  color: #ffffff;
+  font-weight: 400;
+  text-align: left; }
 
 .promo__table-cell {
+  display: block;
+  color: #ffffff;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   padding-top: 4px;
   font-size: 40px;
   line-height: 1;
   font-weight: 700;
   border-top: solid 1px #ffffff; }
 
-.promo__table-cell time {
+.promo__table-time {
   display: block;
   line-height: 1; }
 
@@ -2155,9 +2158,16 @@ button.swiper-pagination-bullet {
   position: relative;
   left: -21px; }
 
+@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .promo {
+    background-image: url("../img/damn@2x.png");
+    background-size: 470px 494px; } }
+
 @media screen and (max-width: 1199px) {
   .promo {
-    padding: 100px 0 0; }
+    padding: 100px 0 0;
+    background-position: left calc((100% - 768px) / 2 + 632px) top -320px;
+    background-size: 423px auto; }
   .promo__inner {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -2182,7 +2192,7 @@ button.swiper-pagination-bullet {
     -webkit-transform: translateY(-1px);
         -ms-transform: translateY(-1px);
             transform: translateY(-1px); }
-  .promo__table tr:first-child {
+  .promo__table-row:first-child {
     margin-bottom: 7px; }
   .promo__table-th {
     padding-bottom: 5px;
@@ -2208,7 +2218,8 @@ button.swiper-pagination-bullet {
 
 @media screen and (max-width: 767px) {
   .promo {
-    padding: 69px 0 0; }
+    padding: 69px 0 0;
+    background-image: none; }
   .promo__inner {
     display: block; }
   .promo__content {

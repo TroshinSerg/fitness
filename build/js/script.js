@@ -3,9 +3,10 @@
 var headerBtn = $('.header__btn');
 var tabsNavButtons = $('.tickets__tabs-nav-btn');
 var footerMenulinks = $('.footer__menu-link');
-var planMain = document.querySelector('.plan__main');
 var phoneField = document.querySelector('.js-phone');
 var regex = /^-?\d*$/;
+
+document.createElement('picture');
 
 headerBtn.click(onAnchorClick);
 tabsNavButtons.each(function (index, item) {
@@ -17,7 +18,7 @@ footerMenulinks.each(function (index, item) {
 });
 
 if (phoneField) {
-  setInputFilter(phoneField, function(value) {
+  setInputFilter(phoneField, function (value) {
     return regex.test(value);
   });
 }
@@ -39,17 +40,18 @@ function onTabsBtnClick(evt) {
 }
 
 function setInputFilter(textbox, inputFilter) {
-  ["input", "keydown", "keyup", "mousedown", "mouseup", "select", "contextmenu", "drop"].forEach(function(event) {
-    textbox.addEventListener(event, function() {
+  /* eslint-disable no-invalid-this */
+  ['input', 'keydown', 'keyup', 'mousedown', 'mouseup', 'select', 'contextmenu', 'drop'].forEach(function (evt) {
+    textbox.addEventListener(evt, function () {
       if (inputFilter(this.value)) {
         this.oldValue = this.value;
         this.oldSelectionStart = this.selectionStart;
         this.oldSelectionEnd = this.selectionEnd;
-      } else if (this.hasOwnProperty("oldValue")) {
+      } else if (this.hasOwnProperty('oldValue')) {
         this.value = this.oldValue;
         this.setSelectionRange(this.oldSelectionStart, this.oldSelectionEnd);
       } else {
-        this.value = "";
+        this.value = '';
       }
     });
   });
@@ -97,5 +99,3 @@ $(document).ready(function () {
     });
   }
 });
-
-

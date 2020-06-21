@@ -3,6 +3,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("../img/hero-bg.jpg");
+  background-color: #980a38;
 }
 
 .header__inner {
@@ -55,23 +56,25 @@
 
 .header__heading {
   max-width: 298px;
-  margin: 0 0 55px;
+  margin: 0 0 57px;
   font-family: "Bebas Neue", "Arial", sans-serif;
-  font-size: 110px;
+  font-size: 109px;
   font-weight: 700;
   line-height: 1;
   letter-spacing: 0.029em;
   color: $white-color;
   text-align: right;
   text-transform: uppercase;
+  text-shadow: 1px 0 0 $white-color, -1px 0 0 $white-color, 1px 2px 0 $white-color, -1px 2px 0 $white-color;
 }
 
 .header__city {
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: 11px;
   font-size: 49px;
   font-weight: 400;
   letter-spacing: 0.03em;
+  text-shadow: none;
 }
 
 .header__list {
@@ -191,12 +194,12 @@
 
   .header__heading {
     max-width: 235px;
-    margin-bottom: 41px;
+    margin-bottom: 42px;
     font-size: 86px;
   }
 
   .header__city {
-    margin-bottom: 5px;
+    margin-bottom: 4px;
     font-size: 34px;
   }
 
@@ -262,12 +265,12 @@
   .header__heading {
     max-width: 213px;
     margin-left: auto;
-    margin-bottom: 44px;
+    margin-bottom: 45px;
     font-size: 78px;
   }
 
   .header__city {
-    margin-bottom: 11px;
+    margin-bottom: 10px;
     font-size: 28px;
   }
 

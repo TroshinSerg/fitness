@@ -51,7 +51,7 @@
 
 .card__price-text {
   position: relative;
-  margin-right: 14px;
+  margin-right: 12px;
   font-size: 60px;
   color: $blue-color;
   font-weight: 700;
@@ -67,6 +67,11 @@
     color: rgba($grey-color, 0.48);
     pointer-events: none;
   }
+}
+
+.card__price-currency {
+  font-size: 57px;
+  font-weight: 600;
 }
 
 .card__btn {

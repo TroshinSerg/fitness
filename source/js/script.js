@@ -6,6 +6,8 @@ var footerMenulinks = $('.footer__menu-link');
 var phoneField = document.querySelector('.js-phone');
 var regex = /^-?\d*$/;
 
+document.createElement('picture');
+
 headerBtn.click(onAnchorClick);
 tabsNavButtons.each(function (index, item) {
   $(item).click(onTabsBtnClick);

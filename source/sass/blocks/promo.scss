@@ -1,5 +1,8 @@
 .promo {
   padding: 120px 0 0;
+  background-image: url("../img/damn.png");
+  background-repeat: no-repeat;
+  background-position: left calc((100% - 1200px) / 2 + 1231px) top -344px;
 }
 
 .promo__inner {
@@ -41,7 +44,7 @@
   border-spacing: 0;
 }
 
-.promo__table tr {
+.promo__table-row {
   display: flex;
   flex-direction: column;
 
@@ -50,20 +53,19 @@
   }
 }
 
-.promo__table td {
-  display: block;
-  color: $white-color;
-  align-self: flex-start;
-}
-
 .promo__table-th {
   padding-bottom: 8px;
   font-size: 18px;
   line-height: 1;
+  color: $white-color;
   font-weight: 400;
+  text-align: left;
 }
 
 .promo__table-cell {
+  display: block;
+  color: $white-color;
+  align-self: flex-start;
   padding-top: 4px;
   font-size: 40px;
   line-height: 1;
@@ -71,7 +73,7 @@
   border-top: solid 1px $white-color;
 }
 
-.promo__table-cell time {
+.promo__table-time {
   display: block;
   line-height: 1;
 }
@@ -122,9 +124,18 @@
   left: -21px;
 }
 
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .promo {
+    background-image: url("../img/damn@2x.png");
+    background-size: 470px 494px;
+  }
+}
+
 @media screen and (max-width: $tablet-width) {
   .promo {
     padding: 100px 0 0;
+    background-position: left calc((100% - 768px) / 2 + 632px) top -320px;
+    background-size: 423px auto;
   }
 
   .promo__inner {
@@ -158,7 +169,7 @@
     transform: translateY(-1px);
   }
 
-  .promo__table tr {
+  .promo__table-row {
     &:first-child {
       margin-bottom: 7px;
     }
@@ -200,6 +211,7 @@
 @media screen and (max-width: $mobile-width) {
   .promo {
     padding: 69px 0 0;
+    background-image: none;
   }
 
   .promo__inner {
