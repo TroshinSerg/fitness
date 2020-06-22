@@ -75,6 +75,10 @@
   }
 }
 
+.webp .gym__video {
+  background-image: url("../img/poster.webp");
+}
+
 .gym__video-btn {
   position: absolute;
   top: 50%;
@@ -134,6 +138,12 @@
   }
 }
 
+.webp .gym__video-btn {
+  &::after {
+    background-image: url("../img/video-btn-circle.webp");
+  }
+}
+
 .gym__video-icon {
   align-self: center;
   margin-left: 5px;
@@ -147,6 +157,16 @@
   .gym__video-btn {
     &::after {
       background-image: url("../img/video-btn-circle@2x.png");
+    }
+  }
+
+  .webp .gym__video {
+    background-image: url("../img/poster@2x.webp");
+  }
+
+  .webp .gym__video-btn {
+    &::after {
+      background-image: url("../img/video-btn-circle@2x.webp");
     }
   }
 }
@@ -262,7 +282,7 @@
   }
 
   .gym__image img {
-    width: 147.5%;
+    width: 472px;
     height: 100%;
     top: 0;
     right: -16px;

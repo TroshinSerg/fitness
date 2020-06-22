@@ -5,8 +5,15 @@ var tabsNavButtons = $('.tickets__tabs-nav-btn');
 var footerMenulinks = $('.footer__menu-link');
 var phoneField = document.querySelector('.js-phone');
 var regex = /^-?\d*$/;
+var webp = 'data:image/webp;base64,UklGRiYAAABXRUJQVlA4IBoAAAAwAQCdASoBAAEAAMASJaQAA3AA/v7uqgAAAA==';
 
 document.createElement('picture');
+
+thisIsWebP().then(function () {
+  $('html').addClass('webp');
+}, function () {
+  $('html').addClass('no-webp');
+});
 
 headerBtn.click(onAnchorClick);
 tabsNavButtons.each(function (index, item) {
@@ -21,6 +28,21 @@ if (phoneField) {
   setInputFilter(phoneField, function (value) {
     return regex.test(value);
   });
+}
+
+function thisIsWebP() {
+  /* eslint-disable new-cap */
+  var def = $.Deferred();
+  var crimg = new Image();
+
+  crimg.onload = function () {
+    def.resolve();
+  };
+  crimg.onerror = function () {
+    def.reject();
+  };
+  crimg.src = webp;
+  return def.promise();
 }
 
 function onAnchorClick(evt) {
@@ -57,6 +79,7 @@ function setInputFilter(textbox, inputFilter) {
   });
 }
 
+/* eslint-disable no-undef */
 $(document).ready(function () {
   /* eslint-disable no-new */
   if (document.querySelector('.coaches__slider .swiper-container')) {

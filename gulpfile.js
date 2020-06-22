@@ -66,7 +66,7 @@ gulp.task('img', function() {
 
 gulp.task("webp", function () {
   return gulp.src("build/img/**/*.{png,jpg}")
-    .pipe(webp({quality: 90}))
+    .pipe(webp({quality: 70}))
     .pipe(gulp.dest("build/img"));
 });
 
@@ -88,8 +88,8 @@ gulp.task("html", function () {
 gulp.task("scripts", function() {
   return gulp.src("source/js/*.js")
     .pipe(plumber())
-    //.pipe(uglify())
-    //.pipe(rename({suffix: ".min"}))
+    .pipe(uglify())
+    .pipe(rename({suffix: ".min"}))
     .pipe(gulp.dest("build/js"))
     .pipe(server.stream());
 });

@@ -73,7 +73,6 @@
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .advantages__item-num-value {
-
     background-image: none;
     color: $blue3-color;
   }
@@ -144,10 +143,6 @@
     display: flex;
 
     &--area {
-      /*grid-column-start: 1;
-      grid-column-end: 2;
-      grid-row-start: 1;
-      grid-row-end: 2;*/
       padding-left: 0;
       padding-bottom: 0;
       border-bottom: none;
@@ -182,13 +177,8 @@
     }
   }
 
-
   .advantages__item-num-value {
     font-size: 58px;
-    /*background-size: 50% auto;
-    background-image: linear-gradient(135deg, #d10a42, #0041ca);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;*/
   }
 
   .advantages__item-content {

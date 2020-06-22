@@ -1308,6 +1308,9 @@ button.swiper-pagination-bullet {
   background-image: url("../img/hero-bg.jpg");
   background-color: #980a38; }
 
+.webp .header {
+  background-image: url("../img/hero-bg.webp"); }
+
 .header__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1450,7 +1453,9 @@ button.swiper-pagination-bullet {
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .header {
-    background-image: url("../img/hero-bg@2x.jpg"); } }
+    background-image: url("../img/hero-bg@2x.jpg"); }
+  .webp .header {
+    background-image: url("../img/hero-bg@2x.webp"); } }
 
 @media screen and (max-width: 1199px) {
   .header {
@@ -1499,7 +1504,9 @@ button.swiper-pagination-bullet {
 
 @media screen and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 1199px) and (-o-min-device-pixel-ratio: 3/2), screen and (max-width: 1199px) and (min-resolution: 144dpi), screen and (max-width: 1199px) and (min-resolution: 1.5dppx) {
   .header {
-    background-image: url("../img/hero-bg-tablet@2x.jpg"); } }
+    background-image: url("../img/hero-bg-tablet@2x.jpg"); }
+  .webp .header {
+    background-image: url("../img/hero-bg-tablet@2x.webp"); } }
 
 @media screen and (max-width: 767px) {
   .header {
@@ -1601,6 +1608,9 @@ button.swiper-pagination-bullet {
     height: 100%;
     background-color: rgba(20, 54, 122, 0.5); }
 
+.webp .gym__video {
+  background-image: url("../img/poster.webp"); }
+
 .gym__video-btn {
   position: absolute;
   top: 50%;
@@ -1661,6 +1671,9 @@ button.swiper-pagination-bullet {
   .gym__video-btn:active {
     opacity: 0.8; }
 
+.webp .gym__video-btn::after {
+  background-image: url("../img/video-btn-circle.webp"); }
+
 .gym__video-icon {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -1671,7 +1684,11 @@ button.swiper-pagination-bullet {
   .gym__video {
     background-image: url("../img/poster@2x.jpg"); }
   .gym__video-btn::after {
-    background-image: url("../img/video-btn-circle@2x.png"); } }
+    background-image: url("../img/video-btn-circle@2x.png"); }
+  .webp .gym__video {
+    background-image: url("../img/poster@2x.webp"); }
+  .webp .gym__video-btn::after {
+    background-image: url("../img/video-btn-circle@2x.webp"); } }
 
 @media screen and (max-width: 1199px) {
   .gym {
@@ -1748,7 +1765,7 @@ button.swiper-pagination-bullet {
     max-height: 313px;
     margin: 0 auto 40px; }
   .gym__image img {
-    width: 147.5%;
+    width: 472px;
     height: 100%;
     top: 0;
     right: -16px; }
@@ -1870,22 +1887,28 @@ button.swiper-pagination-bullet {
   .card__price {
     margin-bottom: 30px; }
   .card__price-text {
-    margin-right: 9px;
+    margin-right: 5px;
     font-size: 48px; }
     .card__price-text::before {
       top: -31px;
       left: -17px;
       font-size: 80px; }
   .card__price-currency {
-    width: 24px;
-    height: 33px; } }
+    position: relative;
+    left: 3px;
+    font-size: 48px; } }
 
 .tickets {
-  padding: 120px 0;
+  padding: 120px 0 200px;
   background-color: #f8f9fc;
-  background-image: url("../img/damn.png");
+  background-image: url("../img/damn.png"), -o-linear-gradient(bottom, #ffffff 81px, transparent 81px);
+  background-image: url("../img/damn.png"), linear-gradient(to top, #ffffff 81px, transparent 81px);
   background-repeat: no-repeat;
-  background-position: left calc((100% - 1200px) / 2 + 1231px) bottom -150px; }
+  background-position: left calc((100% - 1200px) / 2 + 1231px) bottom -70px, 0 0; }
+
+.webp .tickets {
+  background-image: url("../img/damn.webp"), -o-linear-gradient(bottom, #ffffff 81px, transparent 81px);
+  background-image: url("../img/damn.webp"), linear-gradient(to top, #ffffff 81px, transparent 81px); }
 
 .tickets__heading {
   margin: 0 0 35px;
@@ -1974,13 +1997,15 @@ button.swiper-pagination-bullet {
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .tickets {
     background-image: url("../img/damn@2x.png");
-    background-size: 470px 494px; } }
+    background-size: 470px 494px; }
+  .webp .tickets {
+    background-image: url("../img/damn@2x.webp"); } }
 
 @media screen and (max-width: 1199px) {
   .tickets {
-    padding: 100px 0;
-    background-position: left calc((100% - 768px) / 2 + 632px) bottom -125px;
-    background-size: 423px auto; }
+    padding: 100px 0 170px;
+    background-position: left calc((100% - 768px) / 2 + 632px) bottom -55px, 0 10px;
+    background-size: 423px auto, 100% auto; }
   .tickets__inner::before {
     bottom: -225px;
     right: -38px;
@@ -2009,6 +2034,8 @@ button.swiper-pagination-bullet {
   .tickets {
     padding: 68px 0 70px;
     background-image: none; }
+  .webp .tickets {
+    background-image: none; }
   .tickets__inner::before {
     display: none; }
   .tickets__heading {
@@ -2030,10 +2057,7 @@ button.swiper-pagination-bullet {
       margin-bottom: 0; } }
 
 .promo {
-  padding: 120px 0 0;
-  background-image: url("../img/damn.png");
-  background-repeat: no-repeat;
-  background-position: left calc((100% - 1200px) / 2 + 1231px) top -344px; }
+  padding: 40px 0 0; }
 
 .promo__inner {
   display: -webkit-box;
@@ -2158,16 +2182,9 @@ button.swiper-pagination-bullet {
   position: relative;
   left: -21px; }
 
-@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .promo {
-    background-image: url("../img/damn@2x.png");
-    background-size: 470px 494px; } }
-
 @media screen and (max-width: 1199px) {
   .promo {
-    padding: 100px 0 0;
-    background-position: left calc((100% - 768px) / 2 + 632px) top -320px;
-    background-size: 423px auto; }
+    padding: 30px 0 0; }
   .promo__inner {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -2218,8 +2235,7 @@ button.swiper-pagination-bullet {
 
 @media screen and (max-width: 767px) {
   .promo {
-    padding: 69px 0 0;
-    background-image: none; }
+    padding: 69px 0 0; }
   .promo__inner {
     display: block; }
   .promo__content {
@@ -2579,10 +2595,6 @@ button.swiper-pagination-bullet {
     display: -ms-flexbox;
     display: flex; }
     .advantages__item--area {
-      /*grid-column-start: 1;
-      grid-column-end: 2;
-      grid-row-start: 1;
-      grid-row-end: 2;*/
       padding-left: 0;
       padding-bottom: 0;
       border-bottom: none; }
@@ -2621,11 +2633,7 @@ button.swiper-pagination-bullet {
       margin-left: -16px;
       padding-top: 0; }
   .advantages__item-num-value {
-    font-size: 58px;
-    /*background-size: 50% auto;
-    background-image: linear-gradient(135deg, #d10a42, #0041ca);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;*/ }
+    font-size: 58px; }
   .advantages__item-content {
     padding-top: 1px; }
   .advantages__item-heading {
@@ -2810,8 +2818,6 @@ button.swiper-pagination-bullet {
 .actions__item {
   position: relative;
   padding: 7px; }
-  .actions__item + .actions__item {
-    margin-top: 40px; }
   .actions__item::before {
     content: "";
     position: absolute;
@@ -2822,6 +2828,9 @@ button.swiper-pagination-bullet {
     height: 100%;
     background-image: -o-linear-gradient(315deg, #d10a42, #00359f);
     background-image: linear-gradient(135deg, #d10a42, #00359f); }
+
+.actions__item + .actions__item {
+  margin-top: 40px; }
 
 .actions__item-inner {
   display: -webkit-box;
@@ -2912,8 +2921,8 @@ button.swiper-pagination-bullet {
   .actions__item {
     width: calc(50% - 15px);
     margin-top: 30px; }
-    .actions__item + .actions__item {
-      margin-top: 30px; } }
+  .actions__item + .actions__item {
+    margin-top: 30px; } }
 
 @media screen and (max-width: 767px) {
   .actions {
@@ -3559,9 +3568,6 @@ button.swiper-pagination-bullet {
   background-repeat: no-repeat;
   background-image: url("../img/hero-bg.jpg");
   background-size: cover; }
-
-.page__wrapper {
-  overflow: hidden; }
 
 .page__heading {
   color: #ffffff; }

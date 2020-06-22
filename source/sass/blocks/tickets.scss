@@ -1,9 +1,13 @@
 .tickets {
-  padding: 120px 0;
+  padding: 120px 0 200px;
   background-color: $bg-color;
-  background-image: url("../img/damn.png");
+  background-image: url("../img/damn.png"), linear-gradient(to top, $white-color 81px, transparent 81px);
   background-repeat: no-repeat;
-  background-position: left calc((100% - 1200px) / 2 + 1231px) bottom -150px;
+  background-position: left calc((100% - 1200px) / 2 + 1231px) bottom -70px, 0 0;
+}
+
+.webp .tickets {
+  background-image: url("../img/damn.webp"), linear-gradient(to top, $white-color 81px, transparent 81px);
 }
 
 .tickets__heading {
@@ -98,13 +102,17 @@
     background-image: url("../img/damn@2x.png");
     background-size: 470px 494px;
   }
+
+  .webp .tickets {
+    background-image: url("../img/damn@2x.webp");
+  }
 }
 
 @media screen and (max-width: $tablet-width) {
   .tickets {
-    padding: 100px 0;
-    background-position: left calc((100% - 768px) / 2 + 632px) bottom -125px;
-    background-size: 423px auto;
+    padding: 100px 0 170px;
+    background-position: left calc((100% - 768px) / 2 + 632px) bottom -55px, 0 10px;
+    background-size: 423px auto, 100% auto;
   }
 
   .tickets__inner {
@@ -154,6 +162,10 @@
 @media screen and (max-width: $mobile-width) {
   .tickets {
     padding: 68px 0 70px;
+    background-image: none;
+  }
+
+  .webp .tickets {
     background-image: none;
   }
 

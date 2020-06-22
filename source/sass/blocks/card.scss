@@ -134,7 +134,7 @@
   }
 
   .card__price-text {
-    margin-right: 9px;
+    margin-right: 5px;
     font-size: 48px;
 
     &::before {
@@ -145,7 +145,8 @@
   }
 
   .card__price-currency {
-    width: 24px;
-    height: 33px;
+    position: relative;
+    left: 3px;
+    font-size: 48px;
   }
 }

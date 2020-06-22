@@ -6,6 +6,10 @@
   background-color: #980a38;
 }
 
+.webp .header {
+  background-image: url("../img/hero-bg.webp");
+}
+
 .header__inner {
   display: flex;
   flex-wrap: wrap;
@@ -165,6 +169,10 @@
   .header {
     background-image: url("../img/hero-bg@2x.jpg");
   }
+
+  .webp .header {
+    background-image: url("../img/hero-bg@2x.webp");
+  }
 }
 
 @media screen and (max-width: $tablet-width) {
@@ -236,6 +244,10 @@
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .header {
       background-image: url("../img/hero-bg-tablet@2x.jpg");
+    }
+
+    .webp .header {
+      background-image: url("../img/hero-bg-tablet@2x.webp");
     }
   }
 }
