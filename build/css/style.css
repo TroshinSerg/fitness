@@ -1776,6 +1776,7 @@ button.swiper-pagination-bullet {
 
 .card {
   position: relative;
+  display: block;
   padding: 7px;
   color: #102654;
   background-color: #ffffff; }
@@ -2816,8 +2817,8 @@ button.swiper-pagination-bullet {
   position: absolute;
   left: -31px;
   bottom: -5px;
-  width: 431px;
-  height: auto; }
+  width: auto;
+  height: 104.76%; }
 
 .actions__item {
   position: relative;
@@ -2921,7 +2922,8 @@ button.swiper-pagination-bullet {
   .actions__image img {
     left: -5px;
     bottom: -49px;
-    width: auto; }
+    width: auto;
+    height: auto; }
   .actions__item {
     width: calc(50% - 15px);
     margin-top: 30px; }
@@ -3239,6 +3241,9 @@ button.swiper-pagination-bullet {
       background-color: #102654; }
   .free-lesson__heading {
     margin-bottom: 28px; }
+  .free-lesson__inner {
+    max-width: 590px;
+    margin: 0 auto; }
   .free-lesson__form {
     max-width: 472px; }
   .free-lesson__label {
@@ -3247,6 +3252,8 @@ button.swiper-pagination-bullet {
 @media screen and (max-width: 767px) {
   .free-lesson {
     padding: 69px 0; }
+  .free-lesson__inner {
+    max-width: 400px; }
   .free-lesson__heading {
     margin-bottom: 31px; }
   .free-lesson__form {
@@ -3307,6 +3314,9 @@ button.swiper-pagination-bullet {
 @media screen and (max-width: 1199px) {
   .contacts {
     padding: 70px 0 69px 88px; }
+  .contacts__inner {
+    max-width: 590px;
+    margin: 0 auto; }
   .contacts__heading {
     margin-bottom: 40px; }
   .contacts__grid {
@@ -3328,6 +3338,8 @@ button.swiper-pagination-bullet {
 @media screen and (max-width: 767px) {
   .contacts {
     padding: 68px 0 69px; }
+  .contacts__inner {
+    max-width: 400px; }
   .contacts__heading {
     margin-bottom: 44px; }
   .contacts__grid {
@@ -3456,6 +3468,9 @@ button.swiper-pagination-bullet {
 @media screen and (max-width: 1199px) {
   .plan {
     padding: 80px 0; }
+  .plan__main {
+    max-width: 608px;
+    overflow: hidden; }
   .plan__content {
     max-width: 678px;
     margin: 0 auto; }

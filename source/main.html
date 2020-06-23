@@ -6,9 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Фитнес центр Омск</title>
   <meta name="description" content="Большой фитнес центр, идеальное место для укрепления тела и здоровья">
-  <link rel="preload" href="fonts/Robotocondensedlight.woff2" as="font">
-  <link rel="preload" href="fonts/Robotocondensed.woff2" as="font">
-  <link rel="preload" href="fonts/Robotocondensedbold.woff2" as="font">
+  <link rel="preload" href="fonts/robotocondensedlight.woff2" as="font">
+  <link rel="preload" href="fonts/robotocondensed.woff2" as="font">
+  <link rel="preload" href="fonts/robotocondensedbold.woff2" as="font">
   <link rel="preload" href="fonts/bebasneueregular.woff2" as="font">
   <link rel="preload" href="fonts/bebasneuebold.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
@@ -113,7 +113,7 @@
                   <span class="card__btn">Купить абонемент</span>
                 </div>
               </a>
-              <a class="tickets__card card card--popular" href="#">
+              <a class="tickets__card card" href="#">
                 <div class="card__inner">
                   <h3 class="card__heading">Дневной</h3>
                   <div class="card__worktime">с 8:00 до 17:00 </div>
@@ -132,7 +132,7 @@
                     <span class="card__price-text" data-price="2700">2700</span>
                     <span class="card__price-currency">₽</span>
                   </div>
-                  <span class="card__btn" href="#">Купить абонемент</span>
+                  <span class="card__btn">Купить абонемент</span>
                 </div>
               </a>
             </div>
@@ -147,10 +147,10 @@
                     <span class="card__price-text" data-price="24000">24000</span>
                     <span class="card__price-currency">₽</span>
                   </div>
-                  <span class="card__btn">Купить абонемент</>
+                  <span class="card__btn">Купить абонемент</span>
                 </div>
               </a>
-              <a class="tickets__card card card--popular" href="#">
+              <a class="tickets__card card" href="#">
                 <div class="card__inner">
                   <h3 class="card__heading">Дневной</h3>
                   <div class="card__worktime">с 8:00 до 17:00 </div>
@@ -169,7 +169,7 @@
                     <span class="card__price-text" data-price="11400">11400</span>
                     <span class="card__price-currency">₽</span>
                   </div>
-                  <span class="card__btn" href="#">Купить абонемент</span>
+                  <span class="card__btn">Купить абонемент</span>
                 </div>
               </a>
             </div>
@@ -187,7 +187,7 @@
                   <span class="card__btn">Купить абонемент</span>
                 </div>
               </a>
-              <a class="tickets__card card card--popular" href="#">
+              <a class="tickets__card card" href="#">
                 <div class="card__inner">
                   <h3 class="card__heading">Дневной</h3>
                   <div class="card__worktime">с 8:00 до 17:00 </div>
@@ -235,7 +235,7 @@
             </tbody>
           </table>
           <div class="promo__text">Ежегодные соревнования по CrossFit</div>
-          <a class="promo__btn" href="application.html">Заполнить заявку</a>
+          <a class="promo__btn" href="#">Заполнить заявку</a>
         </div>
         <div class="promo__image">
           <picture>
@@ -582,41 +582,45 @@
     <div class="prefooter">
       <div class="prefooter__inner container">
         <section class="prefooter__item free-lesson">
-          <h2 class="free-lesson__heading heading">Бесплатное занятие</h2>
-          <form class="free-lesson__form" action="https://echo.htmlacademy.ru" method="post">
-            <label class="free-lesson__label" aria-label="Имя">
-              <input class="free-lesson__field" type="text" name="name" placeholder="Имя">
-            </label>
-            <label class="free-lesson__label" aria-label="Телефон">
-              <input class="free-lesson__field js-phone" type="tel" name="phone" placeholder="Телефон" required>
-            </label>
-            <button class="free-lesson__btn" type="submit">Отправить</button>
-          </form>
+          <div class="free-lesson__inner">
+            <h2 class="free-lesson__heading heading">Бесплатное занятие</h2>
+            <form class="free-lesson__form" action="https://echo.htmlacademy.ru" method="post">
+              <label class="free-lesson__label" aria-label="Имя">
+                <input class="free-lesson__field" type="text" name="name" placeholder="Имя" required>
+              </label>
+              <label class="free-lesson__label" aria-label="Телефон">
+                <input class="free-lesson__field js-phone" type="tel" name="phone" placeholder="Телефон" required>
+              </label>
+              <button class="free-lesson__btn" type="submit">Отправить</button>
+            </form>
+          </div>
         </section>
         <section class="prefooter__item contacts">
-          <h2 class="contacts__heading heading">Контакты</h2>
-          <div class="contacts__grid">
-            <div class="contacts__column">
-              <div class="contacts__item">
-                <div class="contacts__item-heading">Адрес:</div>
-                <div class="contacts__item-text">г. Омск, ул. 60 лет Октября, 7</div>
-              </div>
-              <div class="contacts__item">
-                <div class="contacts__item-heading">График работы:</div>
-                <div class="contacts__item-text">Пн-Вс: с 8:00 до 22:00</div>
-              </div>
-            </div>
-            <div class="contacts__column">
-              <div class="contacts__item">
-                <div class="contacts__item-heading">Телефон:</div>
-                <div class="contacts__item-text">
-                  <a href="tel:88005555555">8-800-555-55-55</a>
+          <div class="contacts__inner">
+            <h2 class="contacts__heading heading">Контакты</h2>
+            <div class="contacts__grid">
+              <div class="contacts__column">
+                <div class="contacts__item">
+                  <div class="contacts__item-heading">Адрес:</div>
+                  <div class="contacts__item-text">г. Омск, ул. 60 лет Октября, 7</div>
+                </div>
+                <div class="contacts__item">
+                  <div class="contacts__item-heading">График работы:</div>
+                  <div class="contacts__item-text">Пн-Вс: с 8:00 до 22:00</div>
                 </div>
               </div>
-              <div class="contacts__item">
-                <div class="contacts__item-heading">Email:</div>
-                <div class="contacts__item-text">
-                  <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+              <div class="contacts__column">
+                <div class="contacts__item">
+                  <div class="contacts__item-heading">Телефон:</div>
+                  <div class="contacts__item-text">
+                    <a href="tel:88005555555">8-800-555-55-55</a>
+                  </div>
+                </div>
+                <div class="contacts__item">
+                  <div class="contacts__item-heading">Email:</div>
+                  <div class="contacts__item-text">
+                    <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+                  </div>
                 </div>
               </div>
             </div>

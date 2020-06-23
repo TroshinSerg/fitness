@@ -61,6 +61,11 @@
     padding: 70px 0 69px 88px;
   }
 
+  .contacts__inner {
+    max-width: 590px;
+    margin: 0 auto;
+  }
+
   .contacts__heading {
     margin-bottom: 40px;
   }
@@ -98,6 +103,10 @@
 @media screen and (max-width: $mobile-width) {
   .contacts {
     padding: 68px 0 69px;
+  }
+
+  .contacts__inner {
+    max-width: 400px;
   }
 
   .contacts__heading {

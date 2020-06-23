@@ -95,6 +95,11 @@
     margin-bottom: 28px;
   }
 
+  .free-lesson__inner {
+    max-width: 590px;
+    margin: 0 auto;
+  }
+
   .free-lesson__form {
     max-width: 472px;
   }
@@ -107,6 +112,10 @@
 @media screen and (max-width: $mobile-width) {
   .free-lesson {
     padding: 69px 0;
+  }
+
+  .free-lesson__inner {
+    max-width: 400px;
   }
 
   .free-lesson__heading {
