@@ -1,6 +1,7 @@
 .card {
   position: relative;
   padding: 7px;
+  color: $base-color;
   background-color: $white-color;
 
   &::before {
@@ -16,7 +17,10 @@
   }
 
   &:hover,
+  &:focus,
   &--popular {
+    outline: none;
+
     &::before {
       opacity: 1;
     }
@@ -102,16 +106,15 @@
     opacity: 0;
     transition: opacity 0.3s ease;
   }
+}
 
-  &:hover,
-  &:focus {
-    outline: none;
-    border-color: transparent;
-    color: $white-color;
+.card:hover .card__btn,
+.card:focus .card__btn {
+  border-color: transparent;
+  color: $white-color;
 
-    &::before {
-      opacity: 1;
-    }
+  &::before {
+    opacity: 1;
   }
 }
 

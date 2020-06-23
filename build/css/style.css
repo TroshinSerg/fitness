@@ -1778,6 +1778,7 @@ button.swiper-pagination-bullet {
 .card {
   position: relative;
   padding: 7px;
+  color: #102654;
   background-color: #ffffff; }
   .card::before {
     content: "";
@@ -1792,8 +1793,10 @@ button.swiper-pagination-bullet {
     -webkit-transition: opacity 0.3s ease;
     -o-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease; }
-  .card:hover::before, .card--popular::before {
-    opacity: 1; }
+  .card:hover, .card:focus, .card--popular {
+    outline: none; }
+    .card:hover::before, .card:focus::before, .card--popular::before {
+      opacity: 1; }
 
 .card__inner {
   position: relative;
@@ -1869,12 +1872,14 @@ button.swiper-pagination-bullet {
     -webkit-transition: opacity 0.3s ease;
     -o-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease; }
-  .card__btn:hover, .card__btn:focus {
-    outline: none;
-    border-color: transparent;
-    color: #ffffff; }
-    .card__btn:hover::before, .card__btn:focus::before {
-      opacity: 1; }
+
+.card:hover .card__btn,
+.card:focus .card__btn {
+  border-color: transparent;
+  color: #ffffff; }
+  .card:hover .card__btn::before,
+  .card:focus .card__btn::before {
+    opacity: 1; }
 
 @media screen and (max-width: 767px) {
   .card__inner {
