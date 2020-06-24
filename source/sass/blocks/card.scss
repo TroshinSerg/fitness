@@ -18,8 +18,7 @@
   }
 
   &:hover,
-  &:focus,
-  &--popular {
+  &:focus {
     outline: none;
 
     &::before {

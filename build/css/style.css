@@ -1793,9 +1793,9 @@ button.swiper-pagination-bullet {
     -webkit-transition: opacity 0.3s ease;
     -o-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease; }
-  .card:hover, .card:focus, .card--popular {
+  .card:hover, .card:focus {
     outline: none; }
-    .card:hover::before, .card:focus::before, .card--popular::before {
+    .card:hover::before, .card:focus::before {
       opacity: 1; }
 
 .card__inner {
@@ -2001,10 +2001,12 @@ button.swiper-pagination-bullet {
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .tickets {
-    background-image: url("../img/damn@2x.png");
+    background-image: url("../img/damn@2x.png"), -o-linear-gradient(bottom, #ffffff 81px, transparent 81px);
+    background-image: url("../img/damn@2x.png"), linear-gradient(to top, #ffffff 81px, transparent 81px);
     background-size: 470px 494px; }
   .webp .tickets {
-    background-image: url("../img/damn@2x.webp"); } }
+    background-image: url("../img/damn@2x.webp"), -o-linear-gradient(bottom, #ffffff 81px, transparent 81px);
+    background-image: url("../img/damn@2x.webp"), linear-gradient(to top, #ffffff 81px, transparent 81px); } }
 
 @media screen and (max-width: 1199px) {
   .tickets {
@@ -2297,7 +2299,8 @@ button.swiper-pagination-bullet {
   height: 32px;
   padding: 0;
   border: none;
-  background-color: transparent; }
+  background-color: transparent;
+  cursor: pointer; }
   .coaches__slider-btn::before {
     content: "";
     display: block;
@@ -3011,7 +3014,8 @@ button.swiper-pagination-bullet {
   height: 32px;
   padding: 0;
   border: none;
-  background-color: transparent; }
+  background-color: transparent;
+  cursor: pointer; }
   .reviews__slider-btn::before {
     content: "";
     display: block;
@@ -3176,6 +3180,10 @@ button.swiper-pagination-bullet {
   line-height: 1.14;
   color: #ffffff;
   border: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border-bottom: solid 1px #74819c;
   background-color: transparent;
   -webkit-transition: border-color 0.3s ease;

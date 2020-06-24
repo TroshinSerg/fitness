@@ -2,7 +2,7 @@
 
 (function () {
   var days = $('.plan__days');
-  var grid = $('.plan__grid');//
+  var grid = $('.plan__grid');
   var daysList = $('.plan__days-item');
   var daysItems = days.children();
   var times = $('.plan__times');
@@ -45,12 +45,10 @@
   }
 
   if ($(window).width() < WindowWidth.TABLET) {
-    /* eslint-disable no-undef */
-    Scrollbar.init(document.querySelector('.plan__main'), {
+    window.Scrollbar.init(document.querySelector('.plan__main'), {
       alwaysShowTracks: true
     });
-    $('.scrollbar-track-x').css(scrollTrackCss);
-    $('.scrollbar-thumb-x').css(scrollThumbCss);
+    addStyleScrollbar();
     isScroll = true;
   }
 
@@ -63,9 +61,10 @@
     }
 
     if ($(window).width() < WindowWidth.TABLET && !isScroll) {
-      Scrollbar.init(document.querySelector('.plan__main'), {
+      window.Scrollbar.init(document.querySelector('.plan__main'), {
         alwaysShowTracks: true
       });
+      addStyleScrollbar();
     }
   });
 
@@ -94,6 +93,11 @@
       removeHighlightItem(time, NodeModClass.TIME);
     });
   });
+
+  function addStyleScrollbar() {
+    $('.scrollbar-track-x').css(scrollTrackCss);
+    $('.scrollbar-thumb-x').css(scrollThumbCss);
+  }
 
   function highlightItem(item, selector) {
     item.addClass(selector);

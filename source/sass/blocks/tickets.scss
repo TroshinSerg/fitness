@@ -99,12 +99,12 @@
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .tickets {
-    background-image: url("../img/damn@2x.png");
+    background-image: url("../img/damn@2x.png"), linear-gradient(to top, $white-color 81px, transparent 81px);
     background-size: 470px 494px;
   }
 
   .webp .tickets {
-    background-image: url("../img/damn@2x.webp");
+    background-image: url("../img/damn@2x.webp"), linear-gradient(to top, $white-color 81px, transparent 81px);
   }
 }
 

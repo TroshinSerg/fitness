@@ -30,6 +30,8 @@
   line-height: 1.14;
   color: $white-color;
   border: none;
+  border-radius: 0;
+  appearance: none;
   border-bottom: solid 1px $light-blue-color;
   background-color: transparent;
   transition: border-color 0.3s ease;
