@@ -17,6 +17,10 @@ var include = require("posthtml-include");
 var del = require("del");
 var newer = require("gulp-newer");
 var uglify = require("gulp-uglify");
+var concat = require("gulp-concat");
+
+var scriptsPaths = ["source/js/script.js", "source/js/plan.js"];
+var vendorScriptsPaths = ["source/js/vendor/jquery.min.js", "source/js/vendor/picturefill.min.js", "source/js/vendor/smooth-scrollbar.js", "source/js/vendor/swiper.min.js"];
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -86,8 +90,19 @@ gulp.task("html", function () {
 });
 
 gulp.task("scripts", function() {
-  return gulp.src("source/js/*.js")
+  return gulp.src(scriptsPaths)
     .pipe(plumber())
+    .pipe(concat("main.js"))
+    .pipe(uglify())
+    .pipe(rename({suffix: ".min"}))
+    .pipe(gulp.dest("build/js"))
+    .pipe(server.stream());
+});
+
+gulp.task("vendorScripts", function() {
+  return gulp.src(vendorScriptsPaths)
+    .pipe(plumber())
+    .pipe(concat("vendor.js"))
     .pipe(uglify())
     .pipe(rename({suffix: ".min"}))
     .pipe(gulp.dest("build/js"))
@@ -97,7 +112,6 @@ gulp.task("scripts", function() {
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/js/**/*.js",
     "source/*.ico"
     ], {
       base: "source"
@@ -109,5 +123,5 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "scripts", "sprite", "img", "webp", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "vendorScripts", "scripts", "sprite", "img", "webp", "html"));
 gulp.task("start", gulp.series("build", "server"));
