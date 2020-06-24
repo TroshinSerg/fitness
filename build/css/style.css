@@ -2003,7 +2003,7 @@ button.swiper-pagination-bullet {
   .tickets {
     background-image: url("../img/damn@2x.png"), -o-linear-gradient(bottom, #ffffff 81px, transparent 81px);
     background-image: url("../img/damn@2x.png"), linear-gradient(to top, #ffffff 81px, transparent 81px);
-    background-size: 470px 494px; }
+    background-size: 470px 494px, 100% auto; }
   .webp .tickets {
     background-image: url("../img/damn@2x.webp"), -o-linear-gradient(bottom, #ffffff 81px, transparent 81px);
     background-image: url("../img/damn@2x.webp"), linear-gradient(to top, #ffffff 81px, transparent 81px); } }

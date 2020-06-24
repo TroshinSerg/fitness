@@ -100,7 +100,7 @@
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .tickets {
     background-image: url("../img/damn@2x.png"), linear-gradient(to top, $white-color 81px, transparent 81px);
-    background-size: 470px 494px;
+    background-size: 470px 494px, 100% auto;
   }
 
   .webp .tickets {
